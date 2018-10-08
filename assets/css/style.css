@@ -1,22 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Muli: 400,500,600,700|Exo:100,200,300,400,500,600,700');
-
-
 /*
-/*----------------------------------Colours---------*/
+<link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700|Nunito:400,600,700" rel="stylesheet">
+font-family: 'Nunito', sans-serif;
+font-family: 'Cabin', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,500,600,700|Nunito:400,600,700|Exo:100,200,300,400,500,600,700');
 
-#bkg-grad {
-    height: fit-content;
-    background-color: #f7f1be; /*For browsers that do not support gradients */
-    /*background-image: linear-gradient(to bottom right, #FFE400, #FF652F) no-repeat; /* Yellow - Orange*/
-    background-image: linear-gradient(top,  yellow 0%, orange 100%);
-    /*background: -moz-linear-gradient(top, #FFE400 0%, #FF652F 100%);*/
-    background-repeat: no-repeat;
-    background-size: cover;
+/*---------------------------------------------Colours----*/
+body {
+    background-color: #a9bcc2  /*lightblue*/
 }
 
-
-
-/*---------------------------------------------Special padding/margins/text*/
+/*---------------------------------------------Special padding/margins/text----*/
 
 h1,
 h2, 
@@ -29,7 +23,7 @@ h4 {
     text-transform: uppercase;
 }
 
-/*---------------------------------------------Heading*/
+/*---------------------------------------------Heading----*/
 header{
     margin:0;
 }
@@ -48,14 +42,14 @@ header{
     width: 100%;
     text-decoration: none;
     /*color: #ffffff; /*white*/
-    color: #ff652f; /*orange*/
+    color: #ECE5DD; /*white chocolate*/
     height: 50px;
 }
 
 .menuitem a i {
     padding-top: 22px;
     display: block;
-    color: #ff652f; /*orange*/
+    color: #ECE5DD; /*white chocolate*/
     font-size: 20px;
 }
 
@@ -71,147 +65,14 @@ header{
 }
 
 .menu-color {
-    background-color: #2D2222;
-}
-
-.top-page {
-    border:0;
-    height: 1.5em;
-    width: 100%
-
-}
-
-/*---------------------------------------------Containers*/
-.main-container {
-    background-color: #14a76c;
-    /*position:fixed !important;*/
-    position: relative;
-    top: 10px;
-    right: 5px;
-    bottom: 5px;
-    left: 5px;
-    border-radius: 10px;
-    padding: 5px;
-    
-}
-
-.container-internal-content {
-    padding: 5px 10px;
-}
-
-.three-quarter-section {
-    padding: 5px;
-    font-family: "Muli", sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    color: #2d2222;
-}
-
-.one-quarter-section {
-    padding: 5px;
-    font-family: "Exo", sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    color: #2d2222;
-    text-align: center;
-    
+    background-color: #81979b; /*teal*/
 }
 
 
-/*---------------------------------------------Media Bar*/
-
-.media-bar-right {
-   /* position: fixed;*/
-    position: relative;
-    background-color: #ff652f;
-    height: 75vh;
-    width: 25%;
-    top:5px;
-    bottom:5px;
-    right: 2px;
-    left: 0;
-    border-radius: 10px;
-    z-index: 1; 
-    
-}
-
-
-
-
-
-
-/*---------------------------------------------Images*/
-img.main-img {
-    width: 460px;
-    height: 330px;
-}
-
-img.logo-img {
-    width: 290px;
-    height: 170px;
-}
 
 /*---------------------------------------------Hover.css*/
 
 .hvr-sweep-to-bottom:before {
-    background: rgba(69, 53, 69, 0.3);
+    background: rgba(69, 53, 69, 0.1);
     height: 120px;
-}
-
-
-/*---------------------------------------------Media Queries*/
-
-@media (max-width: 768px) {
-    .menuitem {
-        height: 50px;
-    }
-    .menuitem a {
-        height: 20px;
-    }
-
-    .menuitem a i {
-        padding-top: 12px;
-        font-size: 15px;
-    }
-
-    .menuitem span {
-        padding-top: 5px;
-        font-size: 10px;
-        font-weight: 100;
-        letter-spacing: 2px;
-    }
-    
-    
-    
-    .main-container {
-        left:5px;
-        margin: 2;
-        padding: 2;
-        top: 10px; 
-    }
-    .three-quarter-section {
-        padding:0;
-    }
-    
-    .media-bar-right {
-        left: 5px;
-        height: 90vh;
-        width: 95%;
-    }
-    .media-bar-right.img {
-        width: 65px;
-        height: 52px;
-    }
-    
-    img.main-img {
-    width: 315px;
-    height: 210px;
-    left: 15px;
-    margin-left: 25px;
-    margin-top: 10px;
-    }
-    
-    img.logo-img {
-        margin-left: 40px;
-    }
 }
