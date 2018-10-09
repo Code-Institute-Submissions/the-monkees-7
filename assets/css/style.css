@@ -103,7 +103,6 @@ header{
     margin-left: 50px;
     margin-top: 15px;
     margin-bottom: 15px;
-    background-color: #653577;
 }
 
 /*---------------------------------------------side bar----*/
@@ -118,22 +117,48 @@ header{
     font-size: 25px;
     color: #323433;
     margin: 0;
+    align-items: center;
+}
+.side-bar p {
+    font-weight: 400;
+    font-size: 15px;
 }
 
-
+.audio-block {
+    position: absolute;
+    top: 250px;
+    width: 345px;
+}
+.audio-block audio { 
+    width: 270px; 
+    display: block; 
+    margin:25px; 
+    align-items: center;
+}
 
 /*---------------------------------------------Images----*/
 img.main-img {
     width: 315px;
     height: 210px;
-    margin-left: 25px;
-    /*left: 15px;
-    
-    margin-top: 10px;*/
+    margin-left: 8px;
+}
+
+.listen-track-img img {
+    /*225x224*/
+    width: 165px;
+    height: 165px;
 }
 
 /*---------------------------------------------Media Queries*/
 
+/*Small devices / tablets */
+@media (min-width: 768) {
+    .side-bar {
+        width: 50%;
+    }
+}
+
+/*Medium devices / desktops */
 @media (min-width: 992px) {
     img.main-img {
     width: 460px;
@@ -146,10 +171,24 @@ img.main-img {
         margin-bottom: 15px;
     }
 
-    .next-events {
-        margin-left: 50px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        background-color: #653577;
+   .panel-warning {
+        margin-left: 70px;
+        width: 350px;
+    }
+    
+    .audio-block {
+        width: 230px;
+    }
+    .audio-block audio { 
+        width: 215px; 
+        margin:0;
+    }
+}
+
+/*Large devices / wide screens */
+@media (min-width: 1200px) {
+    
+    .audio-block audio { 
+        width: 270px;
     }
 }
