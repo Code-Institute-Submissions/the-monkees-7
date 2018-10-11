@@ -23,6 +23,10 @@ h4 {
     text-transform: uppercase;
 }
 
+.underline {
+    text-decoration: underline;
+}
+
 /*---------------------------------------------Heading----*/
 header{
     margin:0;
@@ -52,14 +56,14 @@ header{
     width: 100%;
     text-decoration: none;
     /*color: #ffffff; /*white*/
-    color: #f2f5f5; /*white chocolate*/
+    color: #fffaf0; /*color: #f2f5f5; /*white chocolate*/
     height: 50px;
 }
 
 .menuitem a i {
     padding-top: 22px;
     display: block;
-    color: #c1c7cd; /*pastel off-white*/
+    color: #fffaf0; /*color: #c1c7cd; /*pastel off-white*/
     font-size: 20px;
 }
 
@@ -88,11 +92,6 @@ header{
 
 /*---------------------------------------------Band Bio----*/
 
-/*.three-reasons-icon {
-    font-size: 26px;
-    color: #e67e22;
-}*/
-
 .band-bio {
     margin-left: 5px;
     margin-top: 15px;
@@ -110,7 +109,7 @@ header{
 .side-bar {
     background-color: #cbbc97;
     width: 100%;
-    height: 75vh;
+    height: 87vh;
     text-align: center;
     font-family: 'Cabin', sans-serif;
     font-weight: 500;
@@ -126,7 +125,7 @@ header{
 
 .audio-block {
     position: absolute;
-    top: 250px;
+    top: 265px;
     width: 345px;
 }
 .audio-block audio { 
@@ -136,14 +135,26 @@ header{
     align-items: center;
 }
 
-.form-container {
+.newsletter-container {
     position: absolute;
-    top: 400px;
-    margin-left: 30px;
+    top: 350px;
+    margin-left: 20px;
+}
+.side-bar p, h4 {
+    width: 80%;
+    /*padding-left: 45px;
+    padding-right: 75px;*/
+    text-align: center;
 }
 
-.form-control#emailaddress {
-    width: 100%;
+.form-control {
+    display: inline-block;
+    width: 65%;
+}
+
+.btn-secondary {
+    font-size: small;
+    padding: 7px 3px;
 }
 
 /*---------------------------------------------Images----*/
@@ -243,7 +254,7 @@ footer {
     .social-media-links {
         margin-left: 42vw;
     }
-    .form-container {
+/*    .form-container {
         top: 400px;
         margin-left: 20px;
 }
@@ -251,7 +262,7 @@ footer {
     .form-control#emailaddress {
         width: 20%;
     }
-}
+}*/
 
 /*Large devices / wide screens */
 @media (min-width: 1200px) {
