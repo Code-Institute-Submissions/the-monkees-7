@@ -10,6 +10,7 @@ body {
     background-color: #a9bcc2  /*lightblue*/
 }
 
+
 /*---------------------------------------------Special padding/margins/text----*/
 
 h1,
@@ -46,25 +47,27 @@ header{
     margin-bottom: 5px;
 }
 
-.menuitem {
-    height: 80px;
-    text-align: center;
+.nav-bar  {
+    list-style-type: none;
+    margin: 0;
     padding: 0;
+    overflow: hidden;
+    background-color: #81979b; /*teal*/
+    /*margin-bottom: 2px;*/
+    /*line-height: 45px;*/
 }
 
-.menuitem a {
-    width: 100%;
-    text-decoration: none;
-    /*color: #ffffff; /*white*/
-    color: #fffaf0; /*color: #f2f5f5; /*white chocolate*/
-    height: 50px;
+.nav-bar li {
+    float: left;
 }
 
-.menuitem a i {
-    padding-top: 22px;
+.nav-bar li a {
     display: block;
-    color: #fffaf0; /*color: #c1c7cd; /*pastel off-white*/
-    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
 }
 
 .menuitem span {
@@ -76,19 +79,26 @@ header{
     font-size: 10px;
     font-weight: 200;
     letter-spacing: 2px;
+    
+    
 }
 
-.menu-color {
-    background-color: #81979b; /*teal*/
-    margin-bottom: 2px;
+.nav-bar li a:hover:not(.active-page) {
+    background: rgba(22, 22, 22, 0.1);  /*darker teal*/
 }
 
-/*---------------------------------------------Hover.css*/
+.active-page {
+    background-color: #ccd5d7;
+    /*background-color: #4CAF50; /*bright green*/
 
-.hvr-sweep-to-bottom:before {
-    background: rgba(22, 22, 22, 0.1);
-    height: 120px;
 }
+
+
+/*.nav-bar li a i .active-page {
+    background-color: #ccd5d7;
+}*/
+
+
 
 /*---------------------------------------------Band Bio----*/
 
@@ -212,6 +222,9 @@ footer {
 }
 /*Small devices / tablets */
 @media (min-width: 768) {
+    .menuitem span {
+        min-height: 30px;
+    }
     .side-bar {
         width: 50%;
     }
@@ -225,6 +238,9 @@ footer {
 
 /*Medium devices / desktops */
 @media (min-width: 992px) {
+    .menuitem span {
+        min-height: 30px;
+    }
     img.main-img {
     width: 460px;
     height: 330px;
@@ -266,7 +282,9 @@ footer {
 
 /*Large devices / wide screens */
 @media (min-width: 1200px) {
-    
+    .menuitem span {
+        min-height: 30px;
+    }
     .audio-block audio { 
         width: 270px;
     }
