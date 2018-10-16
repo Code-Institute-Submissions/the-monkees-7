@@ -79,7 +79,7 @@ header{
     font-size: 10px;
     font-weight: 200;
     letter-spacing: 2px;
-    
+    min-height: 40px;
     
 }
 
@@ -89,15 +89,7 @@ header{
 
 .active-page {
     background-color: #ccd5d7;
-    /*background-color: #4CAF50; /*bright green*/
-
 }
-
-
-/*.nav-bar li a i .active-page {
-    background-color: #ccd5d7;
-}*/
-
 
 
 /*---------------------------------------------Band Bio----*/
@@ -128,6 +120,13 @@ header{
     margin: 0;
     align-items: center;
 }
+.side-bar p, h4 {
+    width: 80%;
+    /*padding-left: 45px;
+    padding-right: 75px;*/
+    text-align: center;
+}
+
 .side-bar p {
     font-weight: 400;
     font-size: 15px;
@@ -149,12 +148,6 @@ header{
     position: absolute;
     top: 350px;
     margin-left: 20px;
-}
-.side-bar p, h4 {
-    width: 80%;
-    /*padding-left: 45px;
-    padding-right: 75px;*/
-    text-align: center;
 }
 
 .form-control {
@@ -178,6 +171,23 @@ img.main-img {
     /*225x224*/
     width: 165px;
     height: 165px;
+}
+
+.circle-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/*---------------------------------------------Band Info*/
+.band-members-container {
+    margin: 2px;
+    padding-bottom: 5px;
+}
+
+.band-members {
+    min-width: 100px;
+    min-height: 100px;
 }
 
 /*---------------------------------------------Footer*/
@@ -218,12 +228,12 @@ footer {
 /*---------------------------------------------Media Queries*/
 /*Extra-Small devices / phones */
 @media (min-width: 320) {
-
+    
 }
 /*Small devices / tablets */
 @media (min-width: 768) {
     .menuitem span {
-        min-height: 30px;
+        min-height: 35px;
     }
     .side-bar {
         width: 50%;
