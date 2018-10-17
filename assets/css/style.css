@@ -1,13 +1,16 @@
 /*
-<link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700|Nunito:400,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700|Poppins:400,500,600,700" rel="stylesheet"> 
 font-family: 'Nunito', sans-serif;
-font-family: 'Cabin', sans-serif;
+font-family: 'Poppins', sans-serif;
 */
-@import url('https://fonts.googleapis.com/css?family=Cabin:400,500,600,700|Nunito:400,600,700|Exo:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700|Nunito:400,600,700|Exo:100,200,300,400,500,600,700');
 
 /*---------------------------------------------Colours----*/
 body {
-    background-color: #a9bcc2  /*lightblue*/
+    background-color: #a9bcc2;  /*lightblue*/
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: medium;
 }
 
 
@@ -18,6 +21,11 @@ h2,
 h3, 
 h4 {
     margin: 0;
+}
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
 }
 
 .uppercase {
@@ -39,7 +47,7 @@ header{
 
 .title-row {
     background-color: #323433;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 25px;
     color: #cbbc97;
@@ -95,9 +103,10 @@ header{
 /*---------------------------------------------Band Bio----*/
 
 .band-bio {
-    margin-left: 5px;
+   /* margin-left: 5px;
     margin-top: 15px;
-    margin-bottom: 4px;
+    margin-bottom: 4px;*/
+    margin: 15px 5px 4px 5px;
 }
 
 .next-events {
@@ -113,17 +122,16 @@ header{
     width: 100%;
     height: 87vh;
     text-align: center;
-    font-family: 'Cabin', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 25px;
     color: #323433;
     margin: 0;
     align-items: center;
 }
-.side-bar p, h4 {
-    width: 80%;
-    /*padding-left: 45px;
-    padding-right: 75px;*/
+.side-bar p, h3 {
+    width: 100%;
+    margin: 2px 25px 2px 15px;
     text-align: center;
 }
 
@@ -134,31 +142,33 @@ header{
 
 .audio-block {
     position: absolute;
-    top: 265px;
+    top: 340px;
     width: 345px;
 }
 .audio-block audio { 
     width: 270px; 
     display: block; 
-    margin:25px; 
+    margin:35px; 
     align-items: center;
 }
 
 .newsletter-container {
     position: absolute;
-    top: 350px;
-    margin-left: 20px;
+    top: 440px;
 }
 
 .form-control {
     display: inline-block;
     width: 65%;
+    margin-left: 25px;
 }
 
 .btn-secondary {
     font-size: small;
-    padding: 7px 3px;
+    padding: 6px 3px;
+    margin-bottom: -4px;
 }
+
 
 /*---------------------------------------------Images----*/
 img.main-img {
@@ -169,8 +179,8 @@ img.main-img {
 
 .listen-track-img img {
     /*225x224*/
-    width: 165px;
-    height: 165px;
+    width: 240px;
+    height: 240px;
 }
 
 .circle-img {
@@ -187,7 +197,23 @@ img.main-img {
 
 .band-members {
     min-width: 100px;
-    min-height: 100px;
+    min-height: 125px;
+}
+
+.band-members-spacer {
+    padding-bottom: 22px;
+}
+
+.gallery {
+    border: 17px solid transparent;
+    padding: 5px;
+    margin-bottom: 40px;
+    border-image: url(../images/pic-border.png) 17 round;
+} 
+
+.gallery-img-style {
+    height: 190px;
+    width: 290px;
 }
 
 /*---------------------------------------------Footer*/
@@ -202,6 +228,9 @@ footer {
 
 #social-media {
     padding-left: 25vw;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
 }
 
 .social-media-links {
@@ -237,6 +266,10 @@ footer {
     }
     .side-bar {
         width: 50%;
+    }
+    /* Band Picture Gallery */
+    .gallery-img-style {    
+        width: 290px;
     }
     #social-media {
         padding-left: 40vw;
@@ -274,6 +307,12 @@ footer {
         width: 215px; 
         margin:0;
     }
+    
+    /* Band Picture Gallery */
+    .gallery-img-style {    
+        width: 270px;
+        /*width: 350px;*/
+    }
     #social-media {
         padding-left: 42vw;
     }
@@ -297,5 +336,10 @@ footer {
     }
     .audio-block audio { 
         width: 270px;
+    }
+    /* Band Picture Gallery */
+    .gallery-img-style {    
+        height: 240px;
+        width: 350px;
     }
 }
