@@ -26,7 +26,7 @@
                     <a href="#"><i class="fa fa-film" aria-hidden="true"></i><span>Videos</span></a>
                 </li>
                 <li class="col-xs-4 col-sm-2 menuitem ">
-                    <a href="#"><i class="fa fa-calendar-alt" aria-hidden="true"></i><span>Events</span></a>
+                    <a href="bookings.html"><i class="fa fa-calendar-alt" aria-hidden="true"></i><span>Events</span></a>
                 </li>
                 <li class="col-xs-4 col-sm-2 menuitem ">
                     <a href="#"><i class="fas fa-shopping-bag" aria-hidden="true"></i><span>Merchandise</span></a>
@@ -35,57 +35,54 @@
         </div>
         
     </header>
-    <section class="container-fluid">
-        <div class="row title-row"> <!--Band Info Header-->
-            <div class="col-xs-12 col-md-12">
+    <section>
+        <div class="title-row"> <!--Band Info Header-->
+            <!--div class="col-xs-12 col-md-12"-->
                 <h2>Band Information</h2>
-            </div>
+            <!--/div-->
         </div>
-        <div class="row">
-            <div class="col-xs-12 col-md-12">
+        <div class="band-info-container">
+            <div class="band-intro">
                 <p>The band originally formed as part of a TV show, in which over 400 people applied
-                to play the parts in a rock group called 'The Monkees'. The show which starred Davy Jones, 
-                Micky Dolenz, Michael Nesmith, and Peter Tork premiered on September 12, 1966, and audiences 
-                adored the humorous antics of the band. While the TV show ended in 1968 the band continued to 
-                have real life hits, but struggled against their "pre-fab four" image.</p>
+                    to play the parts in a rock group called 'The Monkees'. The show which starred Davy Jones, 
+                    Micky Dolenz, Michael Nesmith, and Peter Tork premiered on September 12, 1966, and audiences 
+                    adored the humorous antics of the band. While the TV show ended in 1968 the band continued to 
+                    have real life hits, but struggled against their "pre-fab four" image.</p>
+            </div>
+            <div class="profile-pic">
+                <img src="assets/images/dj.jpg" class="bio-img"></img>   
+            </div>
+            <div class="profile-details">
+                <p><b>Davy Jones</b> was an English singer-songwriter, musician, actor and businessman, 
+            			best known as a member of the band the Monkees. </p>
+            	<p>He was born in Manchester, England in December 1945.
+            			His TV acting debut was in Coronation Street playing Colin Lomax for one episode. He also starred as 
+            			Artful Dodger in a production of "Oliver!" the musical in London's westend - this was a move which 
+            			changed his life forever. </p>
+            			<p>In 1966 Jones became part of the band 'The Monkees' starring on the TV show of the same name.
+            			Jones sang lead vocals on many of the Monkees' recordings, including "I Wanna Be Free" and "Daydream Believer"</p>
+            </div>
+            <div class="profile-pic">
+                <img src="assets/images/md.jpg" class="bio-img"></img>   
+            </div>
+            <div class="profile-details">
+                    Micky Dolenz bio details 
+            </div>
+            <div class="profile-pic">
+                <img src="assets/images/mn.jpg" class="bio-img"></img>   
+            </div>
+            <div class="profile-details">
+                    Michael Nesmith bio details 
+            </div>
+            <div class="profile-pic">
+                <img src="assets/images/pt.jpg" class="bio-img"></img>   
+            </div>
+            <div class="profile-details">
+                    Peter Tork bio details 
             </div>
         </div>
-        <div class="band-members-container">
-            <div class="row"> <!--Band Members Details section-->
-                <div class="col-xs-6 col-md-3 band-members-spacer">
-                    <img src="assets/images/dj.jpg" class="circle-img"></img>
-                </div>
-                <div class="col-xs-6 col-md-3  band-members">    
-                    <p><b>Davy Jones</b> was an English singer-songwriter, musician, actor and businessman, 
-                    best known as a member of the band the Monkees. He was born in Manchester, England in December 1945.
-                    His TV acting debut was in Coronation Street playing Colin Lomax for one episode. He also starred as 
-                    Artful Dodger in a production of "Oliver!" the musical in London's westend - this was a move which 
-                    changed his life forever. </p>
-                    <p>In 1966 Jones became part of the band 'The Monkees' starring on the TV show of the same name.
-                    Jones sang lead vocals on many of the Monkees' recordings, including "I Wanna Be Free" and "Daydream Believer"</p>
-                </div>
-                <div class="col-xs-6 col-md-3 band-members-spacer">
-                    <img src="assets/images/md.jpg" class="circle-img"></img>
-                </div>
-                <div class="col-xs-6 col-md-3  band-members">    
-                    <p>Micky Dolenz...........</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-6 col-md-3 band-members-spacer">
-                    <img src="assets/images/mn.jpg" class="circle-img"></img>
-                </div>
-                <div class="col-xs-6 col-md-3  band-members">
-                    <p>Michael Nesmith...........</p>
-                </div>
-                <div class="col-xs-6 col-md-3 band-members-spacer">
-                    <img src="assets/images/pt.jpg" class="circle-img"></img>
-                </div>
-                <div class="col-xs-6 col-md-3  band-members">
-                    <p>Peter Tork...........</p>
-                </div>
-            </div>
-        </div>
+    </section>
+    <pictures-section class="container-fluid gallery-wrapper">
         <div class="row title-row"> <!--Pictures Header-->
             <div class="col-xs-12 col-md-12">
                 <h2>Pictures</h2>
@@ -130,8 +127,8 @@
                 </div>
             </div>
         </div>
-    </section>
-        <footer class="container-fluid">
+    </pictures-section>
+    <footer class="container-fluid">
         <div id="footer-details" class="row">
             <div class="col-sm-12">
                 <h5 id="social-media" class="uppercase">Social Media Links:</h5>
