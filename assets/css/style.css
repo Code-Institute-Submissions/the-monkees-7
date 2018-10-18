@@ -52,7 +52,8 @@ header{
     font-size: 25px;
     color: #cbbc97;
     text-align: center;
-    margin-bottom: 5px;
+    margin-top: 2px;
+    margin-bottom: 12px;
 }
 
 .nav-bar  {
@@ -61,8 +62,6 @@ header{
     padding: 0;
     overflow: hidden;
     background-color: #81979b; /*teal*/
-    /*margin-bottom: 2px;*/
-    /*line-height: 45px;*/
 }
 
 .nav-bar li {
@@ -243,6 +242,15 @@ img.main-img {
     padding: 10px 8px 25px 8px;
 }
 
+    /*Form*/
+.booking-container {
+    background-color: #F1EDE4;
+    padding-top: 15px;
+    padding-bottom: 3px;
+    border-radius: 4px;
+    
+  }
+  
 /*---------------------------------------------Footer*/
 
 footer {
