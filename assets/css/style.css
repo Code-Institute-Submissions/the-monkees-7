@@ -54,6 +54,7 @@ header{
     text-align: center;
     margin-top: 2px;
     margin-bottom: 12px;
+    padding-bottom: 6px;
 }
 
 .nav-bar  {
@@ -128,7 +129,7 @@ header{
     margin: 0;
     align-items: center;
 }
-.side-bar p, h3 {
+.side-bar p, .side-bar h3 {
     width: 100%;
     margin: 2px 25px 2px 15px;
     text-align: center;
@@ -206,7 +207,7 @@ img.main-img {
 }
 
 .band-intro {
-   flex: 1 100%
+   flex: 1 100%;
 }
 
 .profile-pic {
@@ -242,15 +243,50 @@ img.main-img {
     padding: 10px 8px 25px 8px;
 }
 
-    /*Form*/
+    /*Form and Reviews side bar*/
+    
+ .booking-reviews-wrapper  {
+     display: flex;
+     flex-flow: row wrap;
+ }
+ 
 .booking-container {
     background-color: #F1EDE4;
-    padding-top: 15px;
-    padding-bottom: 3px;
-    border-radius: 4px;
-    
+    flex: 1 100%;
+    padding-bottom: 12px;
   }
-  
+
+.booking-container h4 {
+    text-align: left;
+    margin: 10px 0 18px 8px;
+}
+
+.form-option-groups{
+    margin-left: 30px;
+    
+}
+.loc-list {
+    border-left: 0;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+#req-date {
+    margin-left: 0;
+    border-left: 0;
+    padding-left: 0;
+}
+
+#booking-query-submit {
+    margin-left: 40%;
+    margin-top: 12px;
+}
+
+.reviews-side {
+    background-color: #E4EDF1;
+    flex: 1 100%;
+}
+
 /*---------------------------------------------Footer*/
 
 footer {
@@ -290,11 +326,11 @@ footer {
 }
 
 /*---------------------------------------------Media Queries*/
-/*Extra-Small devices / phones */
+/*-------------------------Extra-Small devices / phones */
 @media (min-width: 320) {
     
 }
-/*Small devices / tablets */
+/*-------------------------Small devices / tablets */
 @media (min-width: 768) {
     .menuitem span {
         min-height: 35px;
@@ -320,6 +356,16 @@ footer {
     .gallery-img-style {    
         width: 290px;
     }
+    /*Booking Form and Reviews*/
+    .booking-container h4 {
+        margin: 10px 0 18px 40px;
+    }
+    #booking-query-submit {
+        margin-left: 50%;
+        margin-top: 20px;
+    }
+    
+    /*Footer*/
     #social-media {
         padding-left: 40vw;
     }
@@ -329,7 +375,7 @@ footer {
     
 }
 
-/*Medium devices / desktops */
+/*--------------------------Medium devices / desktops */
 @media (min-width: 992px) {
     .menuitem span {
         min-height: 30px;
@@ -377,23 +423,30 @@ footer {
         width: 270px;
         /*width: 350px;*/
     }
+    /*Booking Form and Reviews*/
+    .booking-container {
+        flex: 1 65%;
+    }
+    .booking-container h4 {
+        margin: 10px 0 18px 40px;
+    }
+    #booking-query-submit {
+        margin-left: 50%;
+        margin-top: 20px;
+    }
+    .reviews-side {
+        flex: 1 35%;
+    }
+    /*Footer - Social Media*/
     #social-media {
         padding-left: 42vw;
     }
     .social-media-links {
         margin-left: 42vw;
     }
-/*    .form-container {
-        top: 400px;
-        margin-left: 20px;
-}
 
-    .form-control#emailaddress {
-        width: 20%;
-    }
-}*/
 
-/*Large devices / wide screens */
+/*---------------------------Large devices / wide screens */
 @media (min-width: 1200px) {
     .menuitem span {
         min-height: 30px;
