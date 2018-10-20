@@ -1,9 +1,10 @@
 /*
-<link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700|Poppins:400,500,600,700" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,600i,700,700i|Poppins:300,400,400i,500,500i,600,600i,700,700i|Shadows+Into+Light+Two" rel="stylesheet"> <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700|Poppins:400,500,600,700" rel="stylesheet"> 
+font-family: 'Shadows Into Light Two', cursive;
 font-family: 'Nunito', sans-serif;
 font-family: 'Poppins', sans-serif;
 */
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700|Nunito:400,600,700|Exo:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,500i,600,600i,700,700i|Nunito:300,400,600,600i,700,700i|Shadows+Into+Light+Two');
 
 /*---------------------------------------------Colours----*/
 body {
@@ -285,6 +286,62 @@ img.main-img {
 .reviews-side {
     background-color: #E4EDF1;
     flex: 1 100%;
+}
+.reviews-container {
+    width: auto;
+    margin: 7px 30px 15px 30px;
+}
+/*
+Poppins:300,400,400i,500,500i,600,600i,700,700i|Nunito:300,400,600,600i,700,700i
+*/
+
+#review-head {
+    text-align: center;
+    font-family: Nunito, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.review-border {
+    border: double;
+    border-color: #81817E;
+    margin-top: 7px;
+    padding: 2px;
+}
+
+.review-title {
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.review-sub-title {
+    font-family: Nunito, sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 13px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.review-details {
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 14px;
+    padding:12px;
+}
+.rating-title {
+    font-family: Nunito, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 11px;
+}
+
+.rating-star-style {
+    font-size: 10px;
 }
 
 /*---------------------------------------------Footer*/
