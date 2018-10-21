@@ -192,6 +192,11 @@ img.main-img {
     /*border-radius: 50%;*/
 }
 
+.album-cover {
+    width: 100%;
+    height: auto;
+}
+
 /*---------------------------------------------Band Details Flexbox*/
 
 .band-info-container {
@@ -236,6 +241,46 @@ img.main-img {
     height: auto;
     /*height: 190px;
     width: 290px;*/
+}
+
+/*---------------------------------------------Albums*/
+.item1 { grid-area: album-title; }
+.item2 { grid-area: album-cover; }
+.item3 { grid-area: track-header; }
+.item4 { grid-area: tracks1; }
+.item5 { grid-area: tracks2; }
+.item6 { grid-area: album-footer; }
+
+.grid-container {
+  display: grid;
+  /*Mobile Layout*/
+  grid-template-areas: 
+  'album-title'
+  'album-cover'
+  'track-header'
+  'tracks1'
+  'tracks2'
+  'album-footer';
+  
+  grid-template-columns: auto ;
+  grid-gap: 2px;
+  background-color: #81979b; /*teal*/
+  padding: 4px;
+  margin-bottom: 10px;
+}
+.grid-container > div {
+  background-color: rgba(241, 237, 228, 0.8); /*beige*/
+  text-align: center;
+  padding: 5px 0;
+  font-size: 18px;
+}
+
+div.item1 {
+    text-align: center;  
+}
+
+.item4, .item5 {
+    text-align: left;
 }
 
 /*---------------------------------------------Event Bookings*/
@@ -475,6 +520,16 @@ footer {
     .profile-details {
        flex: 1 0 35%
     }
+    /*Albums*/
+     .grid-container {
+         grid-template-areas:
+        'album-cover album-title album-title'
+        'album-cover track-header track-header'
+        'album-cover tracks1 tracks2'
+        'album-footer album-footer album-footer';
+         grid-template-columns: auto auto auto;
+     }
+    
     /* Band Picture Gallery */
     .gallery-img-style {    
         width: 270px;
@@ -511,9 +566,21 @@ footer {
     .audio-block audio { 
         width: 270px;
     }
+    /*Albums*/
+    /* 
+    .grid-container {
+        grid-template-areas:
+        'album-cover album-title album-title'
+        'album-cover track-header track-header'
+        'album-cover tracks1 tracks2'
+        'album-footer album-footer album-footer';
+        grid-template-columns: auto auto auto;
+    }*/
+    
     /* Band Picture Gallery */
     .gallery-img-style {    
         height: 240px;
         width: 350px;
     }
 }
+
