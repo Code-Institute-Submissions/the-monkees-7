@@ -263,24 +263,31 @@ img.main-img {
   'album-footer';
   
   grid-template-columns: auto ;
-  grid-gap: 2px;
+  grid-gap: 0.5px;
   background-color: #81979b; /*teal*/
   padding: 4px;
   margin-bottom: 10px;
 }
 .grid-container > div {
   background-color: rgba(241, 237, 228, 0.8); /*beige*/
-  text-align: center;
   padding: 5px 0;
-  font-size: 18px;
+  font-size: 14px;
 }
 
-div.item1 {
-    text-align: center;  
+div.item1, div.item2, div.item3 {
+    text-align: center;
+    place-self: center stretch;
+}
+div.item2 {
+    padding-top: 10px;
+    padding-bottom: 1f0px;
 }
 
-.item4, .item5 {
+div.item4, div.item5, div.item6 {
     text-align: left;
+}
+.item4 h4, .item5 h4, .item6 h4 {
+    margin-left: 8px;
 }
 
 /*---------------------------------------------Event Bookings*/
@@ -306,6 +313,22 @@ div.item1 {
     text-align: left;
     margin: 10px 0 18px 8px;
 }
+
+/*
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+form div {
+  grid-column: 1 / 2;
+}
+
+.input-file-wrapper {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+*/
 
 .form-option-groups{
     margin-left: 30px;
@@ -428,12 +451,12 @@ footer {
 }
 
 /*---------------------------------------------Media Queries*/
-/*-------------------------Extra-Small devices / phones */
-@media (min-width: 320) {
-    
-}
+
 /*-------------------------Small devices / tablets */
 @media (min-width: 768) {
+    body {
+        background-color: yellow;
+    }
     .menuitem span {
         min-height: 35px;
     }
@@ -454,6 +477,24 @@ footer {
     .profile-details {
        flex: 1 0 35%
     }
+    /*Albums*/
+     .grid-container {
+         grid-template-areas:
+        'album-cover album-title album-title'
+        'album-cover track-header track-header'
+        'album-cover tracks1 tracks2'
+        'album-footer album-footer album-footer';
+         grid-template-columns: auto auto auto;
+     }
+     .grid-container div {
+         font-size: 18px;
+     }
+     
+     div.item2 {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    
     /* Band Picture Gallery */
     .gallery-img-style {    
         width: 290px;
@@ -462,6 +503,7 @@ footer {
     .booking-container h4 {
         margin: 10px 0 18px 40px;
     }
+    
     #booking-query-submit {
         margin-left: 50%;
         margin-top: 20px;
@@ -520,6 +562,13 @@ footer {
     .profile-details {
        flex: 1 0 35%
     }
+    
+    
+    /* Band Picture Gallery */
+    .gallery-img-style {    
+        width: 270px;
+        /*width: 350px;*/
+    }
     /*Albums*/
      .grid-container {
          grid-template-areas:
@@ -529,12 +578,15 @@ footer {
         'album-footer album-footer album-footer';
          grid-template-columns: auto auto auto;
      }
-    
-    /* Band Picture Gallery */
-    .gallery-img-style {    
-        width: 270px;
-        /*width: 350px;*/
+     .grid-container div {
+         font-size: 18px;
+     }
+     
+     div.item2 {
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
+    
     /*Booking Form and Reviews*/
     .booking-container {
         flex: 1 65%;
@@ -566,16 +618,6 @@ footer {
     .audio-block audio { 
         width: 270px;
     }
-    /*Albums*/
-    /* 
-    .grid-container {
-        grid-template-areas:
-        'album-cover album-title album-title'
-        'album-cover track-header track-header'
-        'album-cover tracks1 tracks2'
-        'album-footer album-footer album-footer';
-        grid-template-columns: auto auto auto;
-    }*/
     
     /* Band Picture Gallery */
     .gallery-img-style {    
