@@ -309,48 +309,151 @@ div.item4, div.item5, div.item6 {
     padding-bottom: 12px;
   }
 
-.booking-container h4 {
+/*.booking-container h4 {
     text-align: left;
     margin: 10px 0 18px 8px;
+}*/
+
+/*----------------------Booking form grid------*/
+/*.booking-form-wrapper {
+    display: flex;
+    width: auto;
+    max-width: 100%;
+    padding: 6px;
+}*/
+
+.booking-item-head {
+  grid-area: Header;
+}
+.booking-item-name {
+  grid-area: Name;
+}
+.booking-item-phone {
+  grid-area: Phone;
+}
+.booking-item-email {
+  grid-area: Email;
+}
+.booking-item-etype-label {
+  grid-area: etype-label;
+}
+.booking-item-etype-options1 {
+  grid-area: etype-options1;
+}
+.booking-item-etype-options2 {
+  grid-area: etype-options2;
+}
+.booking-item-etype-options3 {
+  grid-area: etype-options3;
+}
+.booking-item-etype-options4 {
+  grid-area: etype-options4;
+}
+.booking-item-etype-options5 {
+  grid-area: etype-options5;
+}
+.booking-item-loc-label {
+  grid-area: loc-label;
+}
+.booking-item-loc-list {
+  grid-area: loc-list;
+}
+.booking-item-date-label {
+  grid-area: date-label;
+}
+.booking-item-date-picker {
+  grid-area: date-picker;
+}
+.booking-submit-button {
+    grid-area: submit-btn;
 }
 
-/*
-form {
+.form-grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 'Header Header Header'
+  'Name Name Name' 
+  'Phone Phone Phone' 
+  'Email Email Email'
+  'etype-label etype-label etype-label'
+  'etype-options1 etype-options2 etype-options3'
+  'etype-options4 etype-options5 etype-options5' 
+  'loc-label loc-label date-label'
+  'loc-list loc-list date-picker'
+  'submit-btn submit-btn submit-btn';
+  grid-gap: 0px;
+  background-color: #81979b;
+  padding: 2px;
 }
-form div {
-  grid-column: 1 / 2;
+.booking-item-head {
+    font-size: 10px;
 }
-
-.input-file-wrapper {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
+.form-grid-container > div {
+  background-color: rgba(241, 237, 228, 0.8);
+  text-align: left;
+  padding: 12px 25px;
+  font-size: 10px;
+  height: 55px;
 }
-*/
-
-.form-option-groups{
-    margin-left: 30px;
-    
-}
-.loc-list {
-    border-left: 0;
-    padding-left: 0;
-    margin-left: 0;
-}
-
-#req-date {
-    margin-left: 0;
-    border-left: 0;
-    padding-left: 0;
-}
-
-#booking-query-submit {
-    margin-left: 40%;
-    margin-top: 12px;
+div.booking-item-etype-label, div.booking-item-loc-label, div.booking-item-date-label {
+    padding-bottom: 0;
+    height: 35px;
 }
 
+div.booking-item-etype-options1, div.booking-item-etype-options2, 
+div.booking-item-etype-options3, div.booking-item-etype-options4,
+div.booking-item-loc-list, div.booking-item-date-picker, 
+div.booking-submit-button {
+    padding-top: 0;
+    padding-bottom: 1px;
+    padding-left: 5px;
+    text-align: center;
+}
+.booking-submit-button > button {
+    width: 80px;
+}
+
+/*-----------------------------------------------------------------Modal Box for Form*/
+    /*---------Modal -background */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 250px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+    /*---------Modal -content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+    /*---------Modal -Close button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*----------------------Reviews sidebar------*/
 .reviews-side {
     background-color: #E4EDF1;
     flex: 1 100%;
@@ -359,9 +462,6 @@ form div {
     width: auto;
     margin: 7px 30px 15px 30px;
 }
-/*
-Poppins:300,400,400i,500,500i,600,600i,700,700i|Nunito:300,400,600,600i,700,700i
-*/
 
 #review-head {
     text-align: center;
@@ -500,9 +600,10 @@ footer {
         width: 290px;
     }
     /*Booking Form and Reviews*/
+    /*
     .booking-container h4 {
         margin: 10px 0 18px 40px;
-    }
+    }*/
     
     #booking-query-submit {
         margin-left: 50%;
@@ -591,9 +692,9 @@ footer {
     .booking-container {
         flex: 1 65%;
     }
-    .booking-container h4 {
+    /*.booking-container h4 {
         margin: 10px 0 18px 40px;
-    }
+    }*/
     #booking-query-submit {
         margin-left: 50%;
         margin-top: 20px;

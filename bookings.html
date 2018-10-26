@@ -59,59 +59,103 @@
         <div class="row title-row"> <!--Booking Form Header-->
             <h2>Booking Form & Reviews </h2>
         </div>
-        <div class="booking-reviews-wrapper">
-            <form class="form-inline booking-container">
-                <div>
+        
+        <div class="booking-form-wrapper">
+            <form class="form-grid-container">
+                <div class="booking-item-head">
                     <h4>Please complete booking details below:</h4>
                 </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="name" placeholder="Name" required>
-                </div> 
-                <div class="form-group">
-                    <input type="text" class="form-control" id="phone-no" placeholder="Phone #" required>
-                </div> 
-                <div class="form-group">
-                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email" required>
-                </div>    
-                <div class="form-group form-option-groups"> <!--Event Type Options-->
-                    <label for="optradio">Event Type:</label>
-                    <label class="radio-inline">
-                        <input type="radio" name="optradio" checked>Concert
+                <div class="booking-item-name">
+                    <input type="text"  id="name" placeholder="Name" required>
+                </div>
+                <div class="booking-item-phone">
+                    <input type="text"  id="phone-no" placeholder="Phone #" required>
+                </div>  
+                <div class="booking-item-email">
+                    <input type="email"  id="inputEmail3" placeholder="Email" required>
+                </div>
+                <div class="booking-item-etype-label">
+                    <label for="optradio">Event Type</label>
+                </div>
+                <div class="booking-item-etype-options1">
+                    <label class="">
+                        Concert<br>
+                        <input type="radio" name="optradio" id="opt1" checked>
                     </label>
-                    <label class="radio-inline">
-                        <input type="radio" name="optradio">Wedding
+                </div>
+                <div class="booking-item-etype-options2">
+                    <label class="">
+                        Wedding<br><input type="radio" name="optradio" id="opt2">
                     </label>
-                    <label class="radio-inline">
-                        <input type="radio" name="optradio">Christmas Party
+                </div>
+                <div class="booking-item-etype-options3">
+                    <label class="">
+                        Christmas / Birthday Party<br><input type="radio" name="optradio" id="opt3">
                     </label>
-                    <label class="radio-inline">
-                        <input type="radio" name="optradio">Birthday Party
+                </div>
+                <div class="booking-item-etype-options4">
+                    <label class="">
+                        Other<br><input type="radio" name="optradio" id="opt4">
                     </label>
-                    <label class="radio-inline">
-                        <input type="radio" name="optradio">Other
-                    </label>
+                </div>
+                <div class="booking-item-etype-options5">
+                    
                     <input type="text" class="form-control" id="other-event" placeholder="Other - please specify">
-                </div>     
-                <div class="form-group form-option-groups"><!--Locations List-->
-                    <label for="select1">Select Location:</label>
-                    <select class="form-control loc-list" id="select1">
+                </div>
+                <div class="booking-item-loc-label">
+                    <label for="select-loc">Select Location</label>
+                </div>
+                <div class="booking-item-loc-list">
+                    <select class="form-control loc-list" id="select-loc">
                         <option>Belfast</option>
                         <option>Cork</option>
                         <option>Dublin</option>
                         <option>Galway</option>
                         <option>Kerry</option>
                     </select>
-                </div> 
-                <div class="form-group form-option-groups"><!--Date Required-->
-                    <label for="reqdate">Date Required:</label>
+                </div>
+                <div class="booking-item-date-label">
+                    <label for="select-location">Date Required</label>
+                </div>
+                <div class="booking-item-date-picker">
+                    <!--Date Required-->
                     <input type="date" class="form-control" id="req-date" name="reqdate">
                 </div>
-                <div class="form-row align-items-center">
-                    <div class="col-auto">
-                        <button type="submit" class="btn btn-success mb-2" id="booking-query-submit">Submit</button>
-                    </div>
+                <div class="booking-submit-button">
+                    <button type="submit" class="btn btn-success btn-group-sm" id="booking-query-submit">Submit</button>
                 </div>
             </form>
+        </div>
+    
+    <!------------------Modal Box for Form - Option 4 selected------>
+    <div id="other-loc-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>You have selected 'Other' as the Event Type</p>
+            <p>Please provide details of the type of event you wish to make a 
+            booking for by typing in the <b>text box</b> below.</p>
+        </div>
+    <!--/div-->
+        
+        <div class="booking-reviews-wrapper">
+            <div class="booking-container">  <!-- Start of Flexbox for booking form-->
+                <div class="booking-form-grid">  <!--Start of Grid area for booking form-->
+                    <form>
+                        <div class="grid-item1">
+                            <h4>Please complete booking details below:</h4>
+                        </div>
+                        <div class="grid-item2">
+                            <input type="text"  id="name" placeholder="Name" required>
+                        </div>
+                        <div class="grid-item3">
+                            <input type="text"  id="phone-no" placeholder="Phone #" required>
+                        </div> 
+                        <div class="grid-item4">
+                            <input type="email"  id="inputEmail3" placeholder="Email" required>
+                        </div>
+                    </form>
+                </div>
+            </div>
             <div class="reviews-side">  <!--Reviews Sidebar-->
                 <div class="reviews-container">
                     <div class="row">
@@ -294,6 +338,34 @@
         </div>
     </footer>
 
+    <!-- JS for displaying modal-->
+    <script> 
+        // Get the modal
+        var modal = document.getElementById('other-loc-modal');
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("opt4");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body>
 
 </html>
