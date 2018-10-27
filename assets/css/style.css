@@ -290,14 +290,35 @@ div.item4, div.item5, div.item6 {
     margin-left: 8px;
 }
 
-/*---------------------------------------------Event Bookings*/
+/*----------------------------------------Flexbox Containers-------*/
+.main-container {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    padding:0;
+}
 
+.main-container > * {   
+    /*padding: 10px; /*set padding for all items within the container*/
+}
+
+.main-section {
+    background-color: rgba(241, 237, 228, 0.8);
+    flex: 1 100%;
+}
+
+.sidebar-section {
+    background-color: #E4EDF1;
+    flex: 1 100%;
+}
+
+/*---------------------------------------------Event Bookings*/
 .booking-details  {
     padding: 10px 8px 25px 8px;
 }
 
     /*Form and Reviews side bar*/
-    
+/*    
  .booking-reviews-wrapper  {
      display: flex;
      flex-flow: row wrap;
@@ -308,20 +329,13 @@ div.item4, div.item5, div.item6 {
     flex: 1 100%;
     padding-bottom: 12px;
   }
-
+*/
 /*.booking-container h4 {
     text-align: left;
     margin: 10px 0 18px 8px;
 }*/
 
 /*----------------------Booking form grid------*/
-/*.booking-form-wrapper {
-    display: flex;
-    width: auto;
-    max-width: 100%;
-    padding: 6px;
-}*/
-
 .booking-item-head {
   grid-area: Header;
 }
@@ -370,19 +384,21 @@ div.item4, div.item5, div.item6 {
 
 .form-grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: 'Header Header Header'
-  'Name Name Name' 
-  'Phone Phone Phone' 
-  'Email Email Email'
-  'etype-label etype-label etype-label'
-  'etype-options1 etype-options2 etype-options3'
-  'etype-options4 etype-options5 etype-options5' 
-  'loc-label loc-label date-label'
-  'loc-list loc-list date-picker'
-  'submit-btn submit-btn submit-btn';
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 'Header Header Header Header'
+  'Name Name Name Name' 
+  'Phone Phone Phone Phone' 
+  'Email Email Email Email'
+  'etype-label etype-label etype-label etype-label'
+  'etype-options1 etype-options1 etype-options2 etype-options2'
+  'etype-options3 etype-options3 etype-options4 etype-options4'
+  'etype-options5 etype-options5 etype-options5 etype-options5' 
+  'loc-label loc-label date-label date-label'
+  'loc-list loc-list date-picker date-picker'
+  'submit-btn submit-btn submit-btn submit-btn';
   grid-gap: 0px;
   background-color: #81979b;
+  width: 100%;
   padding: 2px;
 }
 .booking-item-head {
@@ -391,23 +407,31 @@ div.item4, div.item5, div.item6 {
 .form-grid-container > div {
   background-color: rgba(241, 237, 228, 0.8);
   text-align: left;
-  padding: 12px 25px;
+  padding: 12px 15px;
   font-size: 10px;
-  height: 55px;
-}
-div.booking-item-etype-label, div.booking-item-loc-label, div.booking-item-date-label {
-    padding-bottom: 0;
-    height: 35px;
+  /*height: 55px;*/
+  min-height: 55px;
 }
 
 div.booking-item-etype-options1, div.booking-item-etype-options2, 
 div.booking-item-etype-options3, div.booking-item-etype-options4,
 div.booking-item-loc-list, div.booking-item-date-picker, 
 div.booking-submit-button {
-    padding-top: 0;
+    /*padding-top: 0;
     padding-bottom: 1px;
-    padding-left: 5px;
+    padding-left: 5px;*/
+    margin-left: 0;
+    padding: 0px 5px 1px 2px;
     text-align: center;
+    justify-content: flex-start;
+}
+#select-loc, #req-date {
+    width: 85%;
+}
+#et-label,  #loc-label, #date-label {
+    padding-bottom: 0;
+    min-height: 35px;
+    
 }
 .booking-submit-button > button {
     width: 80px;
@@ -419,7 +443,7 @@ div.booking-submit-button {
     display: none; 
     position: fixed; 
     z-index: 1; 
-    padding-top: 250px; /* Location of the box */
+    padding-top: 200px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; 
@@ -454,10 +478,10 @@ div.booking-submit-button {
 }
 
 /*----------------------Reviews sidebar------*/
-.reviews-side {
+/*.reviews-side {
     background-color: #E4EDF1;
     flex: 1 100%;
-}
+}*/
 .reviews-container {
     width: auto;
     margin: 7px 30px 15px 30px;
@@ -554,9 +578,6 @@ footer {
 
 /*-------------------------Small devices / tablets */
 @media (min-width: 768) {
-    body {
-        background-color: yellow;
-    }
     .menuitem span {
         min-height: 35px;
     }
@@ -621,13 +642,21 @@ footer {
 }
 
 /*--------------------------Medium devices / desktops */
-@media (min-width: 992px) {
+@media all and (min-width: 992px) {
     .menuitem span {
         min-height: 30px;
     }
     img.main-img {
     width: 460px;
     height: 330px;
+    }
+    
+    .main-section {
+      flex: 1 70%;
+    }
+
+    .sidebar-section {
+      flex: 1 30%;
     }
     
     .band-bio {
@@ -699,8 +728,26 @@ footer {
         margin-left: 50%;
         margin-top: 20px;
     }
-    .reviews-side {
-        flex: 1 35%;
+    .form-grid-container {
+     /* width: 75%;*/
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-areas: 'Header Header Header Header'
+      'Name Name Phone Phone' 
+      'Email Email Email Email'
+      'etype-label etype-label etype-label etype-label'
+      'etype-options1 etype-options2 etype-options3 etype-options3'
+      'etype-options4 etype-options5 etype-options5 etype-options5' 
+      'loc-label loc-label date-label date-label'
+      'loc-list loc-list date-picker date-picker'
+      'submit-btn submit-btn submit-btn submit-btn';
+      grid-gap: 0px;
+      margin-bottom: 10px;
+    }
+    .form-grid-container > div {
+      text-align: left;
+      padding: 12px 25px;
+      font-size: 14px;
+      min-height: 50px;
     }
     /*Footer - Social Media*/
     #social-media {

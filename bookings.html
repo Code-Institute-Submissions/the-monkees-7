@@ -59,272 +59,257 @@
         <div class="row title-row"> <!--Booking Form Header-->
             <h2>Booking Form & Reviews </h2>
         </div>
+        </section>
+        <div class="main-container"> <!--Flexbox Container-->
+            <div class="main-section"> <!--Flexbox Main - Booking Form-->
+                <form class="form-grid-container">
+            <div class="booking-item-head">
+                <h4>Please complete booking details below:</h4>
+            </div>
+            <div class="booking-item-name">
+                <input type="text" class="form-control"  id="name" placeholder="Name" required>
+            </div>
+            <div class="booking-item-phone">
+                <input type="text" class="form-control" id="phone-no" placeholder="Phone #" required>
+            </div>  
+            <div class="booking-item-email">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email" required>
+            </div>
+            <div class="booking-item-etype-label" id="et-label">
+                <label for="opt1">Event Type</label>
+            </div>
+            <div class="booking-item-etype-options1">
+                <label class="">
+                    Concert<br>
+                    <input type="radio" name="optradio" id="opt1" checked>
+                </label>
+            </div>
+            <div class="booking-item-etype-options2">
+                <label class="">
+                    Wedding<br><input type="radio" name="optradio" id="opt2">
+                </label>
+            </div>
+            <div class="booking-item-etype-options3">
+                <label class="">
+                    Christmas / Birthday Party<br><input type="radio" name="optradio" id="opt3">
+                </label>
+            </div>
+            <div class="booking-item-etype-options4">
+                <label class="">
+                    Other<br><input type="radio" name="optradio" id="opt4">
+                </label>
+            </div>
+            <div class="booking-item-etype-options5">
+                
+                <input type="text" class="form-control" id="other-event" placeholder="Other - please specify">
+            </div>
+            <div class="booking-item-loc-label" id="loc-label">
+                <label for="select-loc">Select Location</label>
+            </div>
+            <div class="booking-item-loc-list">
+                <select class="form-control loc-list" id="select-loc">
+                    <option>Belfast</option>
+                    <option>Cork</option>
+                    <option>Dublin</option>
+                    <option>Galway</option>
+                    <option>Kerry</option>
+                </select>
+            </div>
+            <div class="booking-item-date-label" id="loc-label">
+                <label for="req-date">Date Required</label>
+            </div>
+            <div class="booking-item-date-picker">
+                <!--Date Required-->
+                <input type="date" class="form-control" id="req-date" name="reqdate">
+            </div>
+            <div class="booking-submit-button">
+                <button type="submit" class="btn btn-success btn-group-sm" id="booking-query-submit">Submit</button>
+            </div>
+        </form>
+            </div>
         
-        <div class="booking-form-wrapper">
-            <form class="form-grid-container">
-                <div class="booking-item-head">
-                    <h4>Please complete booking details below:</h4>
-                </div>
-                <div class="booking-item-name">
-                    <input type="text"  id="name" placeholder="Name" required>
-                </div>
-                <div class="booking-item-phone">
-                    <input type="text"  id="phone-no" placeholder="Phone #" required>
-                </div>  
-                <div class="booking-item-email">
-                    <input type="email"  id="inputEmail3" placeholder="Email" required>
-                </div>
-                <div class="booking-item-etype-label">
-                    <label for="optradio">Event Type</label>
-                </div>
-                <div class="booking-item-etype-options1">
-                    <label class="">
-                        Concert<br>
-                        <input type="radio" name="optradio" id="opt1" checked>
-                    </label>
-                </div>
-                <div class="booking-item-etype-options2">
-                    <label class="">
-                        Wedding<br><input type="radio" name="optradio" id="opt2">
-                    </label>
-                </div>
-                <div class="booking-item-etype-options3">
-                    <label class="">
-                        Christmas / Birthday Party<br><input type="radio" name="optradio" id="opt3">
-                    </label>
-                </div>
-                <div class="booking-item-etype-options4">
-                    <label class="">
-                        Other<br><input type="radio" name="optradio" id="opt4">
-                    </label>
-                </div>
-                <div class="booking-item-etype-options5">
-                    
-                    <input type="text" class="form-control" id="other-event" placeholder="Other - please specify">
-                </div>
-                <div class="booking-item-loc-label">
-                    <label for="select-loc">Select Location</label>
-                </div>
-                <div class="booking-item-loc-list">
-                    <select class="form-control loc-list" id="select-loc">
-                        <option>Belfast</option>
-                        <option>Cork</option>
-                        <option>Dublin</option>
-                        <option>Galway</option>
-                        <option>Kerry</option>
-                    </select>
-                </div>
-                <div class="booking-item-date-label">
-                    <label for="select-location">Date Required</label>
-                </div>
-                <div class="booking-item-date-picker">
-                    <!--Date Required-->
-                    <input type="date" class="form-control" id="req-date" name="reqdate">
-                </div>
-                <div class="booking-submit-button">
-                    <button type="submit" class="btn btn-success btn-group-sm" id="booking-query-submit">Submit</button>
-                </div>
-            </form>
+            <!------------------Modal Box for Form - Option 4 selected------>
+            <div id="other-loc-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>You have selected 'Other' as the Event Type</p>
+                <p>Please provide details of the type of event you wish to make a 
+                booking for by typing in the <b>text box</b> below.</p>
+            </div>
+        </div>
+            
+            <!------------------Flexbox Sidebar - Reviews------------------------->
+            <div class="sidebar-section">
+                <!--div class="reviews-side"-->  <!--Reviews Sidebar-->
+                    <div class="reviews-container">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="underline" id="review-head">
+                                    Recent Reviews:
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-border">     <!--Border around review 1-->
+                            <div class="row review-title">
+                                <div class="col-xs-12">Best concert in a long time - nothing short of amazing!</div>
+                            </div>
+                            <div class="row review-sub-title">
+                                <div class="col-xs-7">
+                                    <span>Liz & John</span>
+                                </div>
+                                <div class="col-xs-5">
+                                    <span>Oct. 2nd</span>
+                                </div>
+                            </div>
+                            <div class="row review-details">
+                                <div class="col-xs-12">
+                                    They were just fantastic throughout the whole concert.
+                                    Everyone dancing and singing along to every song. Really
+                                    set the bar high for future events.
+                                </div>
+                            </div>
+                            <div class="row rating-title">
+                                <div class="col-xs-4">
+                                    <p>Live Performance</p>
+                                </div>
+                                <div class="col-xs-4">
+                                    <p>Audience Interaction</p>
+                                </div>
+                                <div class="col-xs-4">
+                                    <p>Value</p>
+                                </div>
+                            </div>
+                            <div class="row rating-star-style">
+                                <div class="col-xs-4">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="col-xs-4">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="col-xs-4">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-border">     <!--Border around review 2-->
+                            <div class="row review-title">
+                                <div class="col-xs-12">Great band for a wedding</div>
+                            </div>
+                            <div class="row review-sub-title">
+                                <div class="col-xs-7">
+                                    <span>Mark and Catriona</span>
+                                </div>
+                                <div class="col-xs-5">
+                                    <span>Sept. 14th</span>
+                                </div>
+                            </div>
+                            <div class="row review-details">
+                                <div class="col-xs-12">
+                                    <p>Really delighted to have 'The Monkees' to perform
+                                    at our wedding, they made the day extra special! 
+                                    We had lots of comments from our guests too on how they loved
+                                    hearing some of the older songs again, as well as the newer material.
+                                    <br>Highly Recommended!!!</p>
+                                </div>
+                            </div>
+                            <div class="row rating-title">
+                                <div class="col-xs-4">
+                                    <p>Live Performance</p>
+                                </div>
+                                <div class="col-xs-4">
+                                    <p>Audience Interaction</p>
+                                </div>
+                                <div class="col-xs-4">
+                                    <p>Value</p>
+                                </div>
+                            </div>
+                            <div class="row rating-star-style">
+                                <div class="col-xs-4">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="col-xs-4">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="col-xs-4">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-border">     <!--Border around review 3-->
+                            <div class="row review-title">
+                                <div class="col-xs-12">Really enjoyed listening to the band at our function!</div>
+                            </div>
+                            <div class="row review-sub-title">
+                                <div class="col-xs-7">
+                                    <span>Michael Moore</span>
+                                </div>
+                                <div class="col-xs-5">
+                                    <span>Aug. 30th</span>
+                                </div>
+                            </div>
+                            <div class="row review-details">
+                                <div class="col-xs-12">
+                                    <p>Enjoyed hearing them play at a recent
+                                    event. Great audience interaction for their old classics.
+                                    I wasn't familiar with some new material, but enjoyed hearing
+                                    them none the less.</p>
+                                </div>
+                            </div>
+                            <div class="row rating-title">
+                                <div class="col-xs-4">
+                                    <p>Live Performance</p>
+                                </div>
+                                <div class="col-xs-4">
+                                    <p>Audience Interaction</p>
+                                </div>
+                                <div class="col-xs-4">
+                                    <p>Value</p>
+                                </div>
+                            </div>
+                            <div class="row rating-star-style">
+                                <div class="col-xs-4">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="col-xs-4">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <div class="col-xs-4">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                <!--/div-->
+            </div>
         </div>
     
-    <!------------------Modal Box for Form - Option 4 selected------>
-    <div id="other-loc-modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>You have selected 'Other' as the Event Type</p>
-            <p>Please provide details of the type of event you wish to make a 
-            booking for by typing in the <b>text box</b> below.</p>
-        </div>
-    <!--/div-->
-        
-        <div class="booking-reviews-wrapper">
-            <div class="booking-container">  <!-- Start of Flexbox for booking form-->
-                <div class="booking-form-grid">  <!--Start of Grid area for booking form-->
-                    <form>
-                        <div class="grid-item1">
-                            <h4>Please complete booking details below:</h4>
-                        </div>
-                        <div class="grid-item2">
-                            <input type="text"  id="name" placeholder="Name" required>
-                        </div>
-                        <div class="grid-item3">
-                            <input type="text"  id="phone-no" placeholder="Phone #" required>
-                        </div> 
-                        <div class="grid-item4">
-                            <input type="email"  id="inputEmail3" placeholder="Email" required>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="reviews-side">  <!--Reviews Sidebar-->
-                <div class="reviews-container">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="underline" id="review-head">
-                                Recent Reviews:
-                            </div>
-                        </div>
-                    </div>
-                    <div class="review-border">     <!--Border around review 1-->
-                        <div class="row review-title">
-                            <div class="col-xs-12">Best concert in a long time - nothing short of amazing!</div>
-                        </div>
-                        <div class="row review-sub-title">
-                            <div class="col-xs-7">
-                                <span>Liz & John</span>
-                            </div>
-                            <div class="col-xs-5">
-                                <span>Oct. 2nd</span>
-                            </div>
-                        </div>
-                        <div class="row review-details">
-                            <div class="col-xs-12">
-                                They were just fantastic throughout the whole concert.
-                                Everyone dancing and singing along to every song. Really
-                                set the bar high for future events.
-                            </div>
-                        </div>
-                        <div class="row rating-title">
-                            <div class="col-xs-4">
-                                <p>Live Performance</p>
-                            </div>
-                            <div class="col-xs-4">
-                                <p>Audience Interaction</p>
-                            </div>
-                            <div class="col-xs-4">
-                                <p>Value</p>
-                            </div>
-                        </div>
-                        <div class="row rating-star-style">
-                            <div class="col-xs-4">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <div class="col-xs-4">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <div class="col-xs-4">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="review-border">     <!--Border around review 2-->
-                        <div class="row review-title">
-                            <div class="col-xs-12">Great band for a wedding</div>
-                        </div>
-                        <div class="row review-sub-title">
-                            <div class="col-xs-7">
-                                <span>Mark and Catriona</span>
-                            </div>
-                            <div class="col-xs-5">
-                                <span>Sept. 14th</span>
-                            </div>
-                        </div>
-                        <div class="row review-details">
-                            <div class="col-xs-12">
-                                <p>Really delighted to have 'The Monkees' to perform
-                                at our wedding, they made the day extra special! 
-                                We had lots of comments from our guests too on how they loved
-                                hearing some of the older songs again, as well as the newer material.
-                                <br>Highly Recommended!!!</p>
-                            </div>
-                        </div>
-                        <div class="row rating-title">
-                            <div class="col-xs-4">
-                                <p>Live Performance</p>
-                            </div>
-                            <div class="col-xs-4">
-                                <p>Audience Interaction</p>
-                            </div>
-                            <div class="col-xs-4">
-                                <p>Value</p>
-                            </div>
-                        </div>
-                        <div class="row rating-star-style">
-                            <div class="col-xs-4">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <div class="col-xs-4">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <div class="col-xs-4">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="review-border">     <!--Border around review 3-->
-                        <div class="row review-title">
-                            <div class="col-xs-12">Really enjoyed listening to the band at our function!</div>
-                        </div>
-                        <div class="row review-sub-title">
-                            <div class="col-xs-7">
-                                <span>Michael Moore</span>
-                            </div>
-                            <div class="col-xs-5">
-                                <span>Aug. 30th</span>
-                            </div>
-                        </div>
-                        <div class="row review-details">
-                            <div class="col-xs-12">
-                                <p>Enjoyed hearing them play at a recent
-                                event. Great audience interaction for their old classics.
-                                I wasn't familiar with some new material, but enjoyed hearing
-                                them none the less.</p>
-                            </div>
-                        </div>
-                        <div class="row rating-title">
-                            <div class="col-xs-4">
-                                <p>Live Performance</p>
-                            </div>
-                            <div class="col-xs-4">
-                                <p>Audience Interaction</p>
-                            </div>
-                            <div class="col-xs-4">
-                                <p>Value</p>
-                            </div>
-                        </div>
-                        <div class="row rating-star-style">
-                            <div class="col-xs-4">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <div class="col-xs-4">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-                            <div class="col-xs-4">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-        </div>
-    </section>
         <footer class="container-fluid">
         <div id="footer-details" class="row">
             <div class="col-sm-12">
