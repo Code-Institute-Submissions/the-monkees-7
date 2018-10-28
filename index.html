@@ -47,18 +47,24 @@
             </div>
             <div class="hidden-xs col-md-3"></div> <!--blank-->
         </div>
-        <div class="row">
-            <div class="hidden-xs col-md-1"></div> <!--blank-->
-            <div class="col-xs-12 col-md-7">
-                <div class="row band-bio">
-                    <h2 class="text-center">Biography</h2>
+        
+        <div class="row title-row"> <!--Band Name / Title-->
+            <div class="col-xs-12 col-md-12">
+                <h2 class="text-center">Biography</h2>
+            </div>
+        </div>
+        </section>
+        
+        <div class="main-container" id="index-main">
+            <div class="main-section">
+                <div class="band-bio">
                     <p>The Monkees were originally formed as part of a TV series about a rock group in 1965, 
                     which premiered on 12th September 1966.</p>
                     <p>Although the band was formed for TV which ran until 1968. They went on to have real life hits, 
                     and now with over 50 years experience of live performances world wide, are also
                     available to perform at various different events.</p>
                 </div>
-                <div class="row "> <!--next-events-->
+                 <!--next-events-->
                     <div class="panel panel-warning">
                       <div class="panel-heading">Upcoming Events</div>
                       <div class="panel-body">
@@ -71,39 +77,53 @@
                         </ol>
                       </div>
                     </div>
-                  </div>
-            </div> <!--Center section - Band Bio -->
-            <div class="hidden-xs col-sm-3 col-md-1"></div> <!--blank-->
-            <div class="col-xs-12 col-sm-6 col-md-3"><!--Sidebar Start-->
-                <div class="side-bar">
-                    <h2>Latest Music</h2>
-                    <i class=" fa fa-headphones-alt fa-2x" aria-hidden="true"></i>
-                    <div class="listen-track-img">
+                  
+            </div> <!--End Center section - Band Bio -->
+            
+            <div class="sidebar-section" id="index-sidebar"> <!--Sidebar Start-->
+                <form class="home-sidebar-grid">
+                    <div class="gd-latest-head"><h2>Latest Music</h2></div>
+                    <div class="gd-headphones-img">
+                        <i class=" fa fa-headphones-alt fa-2x" aria-hidden="true"></i>
+                    </div>
+                    <div class="gd-track-cover1">
                         <img src="assets/images/daydreambeliever.jpg" alt="Track Cover" />
+                    </div>
+                    <div class="gd-track-title1">
                         <h5>Day Dream Believer</h5>
                     </div>
-             
-                    <div class="audio-block">
+                     <div class="gd-audio-block1">
                         <audio controls="controls"  src="assets/audio/DaydreamBeliever.mp3">
                             Your browser does not support the audio element
                         </audio>
                     </div>
-                
-                   <div class="newsletter-container">
-                        <h3 class="underline">Newsletter</h3>
-                        <p>Subscribe to our newsletter below:</p>
-                        <form>
-                          <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
-                          <button type="submit" class="btn btn-secondary">Subscribe</button>
-                          
-                        </form>
+                    <div class="gd-track-cover2">
+                        <img src="assets/images/clarksville.jpg" alt="Track Cover" />
                     </div>
-                </div>
+                    <div class="gd-track-title2">
+                        <h5>Last Train To Clarksville</h5>
+                    </div>
+                     <div class="gd-audio-block2">
+                        <audio controls="controls"  src="assets/audio/Clarksville.mp3">
+                            Your browser does not support the audio element
+                        </audio>
+                    </div>
+                    <div class="gd-newsletter-head">
+                        <br><h3 class="underline">Newsletter</h3>
+                    </div>
+                    <div class="gd-newsletter-sub">Subscribe to our newsletter below:</div>
+                    <div class="gd-newsletter-email">
+                        <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
+                    </div>
+                    <div class="gd-newsletter-button">
+                        <button type="submit" class="btn btn-secondary">Subscribe</button>
+                    </div>
+                </form>
             </div><!--Sidebar End-->
             
         </div>
         
-    </section>
+    
     <footer class="container-fluid">
         <div id="footer-details" class="row">
             <div class="col-sm-12">

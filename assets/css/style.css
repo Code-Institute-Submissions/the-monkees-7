@@ -100,62 +100,75 @@ header{
     background-color: #ccd5d7;
 }
 
-
-/*---------------------------------------------Band Bio----*/
-
-.band-bio {
-   /* margin-left: 5px;
-    margin-top: 15px;
-    margin-bottom: 4px;*/
-    margin: 15px 5px 4px 5px;
-}
-
-.next-events {
-    margin-left: 50px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-/*---------------------------------------------side bar----*/
-
-.side-bar {
-    background-color: #cbbc97;
-    width: 100%;
-    height: 87vh;
+/*----------------------------------------Flexbox Containers-------*/
+.main-container {
+    display: flex;
+    flex-flow: row wrap;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 25px;
-    color: #323433;
-    margin: 0;
+    padding:0;
+}
+
+.main-container > * {   
+    /*padding: 10px; /*set padding for all items within the container*/
+}
+
+.main-section {
+    background-color: rgba(241, 237, 228, 0.8);
+    flex: 1 100%;
+}
+
+.sidebar-section {
+    background-color: #E4EDF1;
+    flex: 1 100%;
+}
+
+/*-----------------------------------Homepage sidebar grid--*/
+.gd-latest-head { grid-area: latest-head; }
+.gd-headphones-img { grid-area: headphones-img; }
+.gd-track-cover1 { grid-area: track-cover1; }
+.gd-track-title1 { grid-area: track-title1; }
+.gd-audio-block1 { grid-area: audio-block1; }
+.gd-track-cover2 { grid-area: track-cover2; }
+.gd-track-title2 { grid-area: track-title2; }
+.gd-audio-block2 { grid-area: audio-block2; }
+.gd-newsletter-head { grid-area: news-head; }
+.gd-newsletter-sub { grid-area: news-sub; }
+.gd-newsletter-email { grid-area: news-email; }
+.gd-newsletter-button { grid-area: news-btn; }
+
+.home-sidebar-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  /*Mobile Layout*/
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas: 
+  'latest-head latest-head latest-head'
+  'headphones-img headphones-img headphones-img'
+  'track-cover1 track-cover1 track-cover1'
+  'track-title1 track-title1 track-title1'
+  'audio-block1 audio-block1 audio-block1'
+  'track-cover2 track-cover2 track-cover2'
+  'track-title2 track-title2 track-title2'
+  'audio-block2 audio-block2 audio-block2'
+  'news-head news-head news-head'
+  'news-sub news-sub news-sub'
+  'news-email news-email news-btn';
+  
+  grid-gap: 1px;
+  padding: 4px;
+  margin-bottom: 10px;
+}
+
+#index-main { height: 90vh; }
+
+#index-sidebar {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.gd-audio-block1 audio, .gd-audio-block2 audio { 
+    width: 280px; 
     align-items: center;
-}
-.side-bar p, .side-bar h3 {
-    width: 100%;
-    margin: 2px 25px 2px 15px;
-    text-align: center;
-}
-
-.side-bar p {
-    font-weight: 400;
-    font-size: 15px;
-}
-
-.audio-block {
-    position: absolute;
-    top: 340px;
-    width: 345px;
-}
-.audio-block audio { 
-    width: 270px; 
-    display: block; 
-    margin:35px; 
-    align-items: center;
-}
-
-.newsletter-container {
-    position: absolute;
-    top: 440px;
 }
 
 .form-control {
@@ -178,7 +191,7 @@ img.main-img {
     margin-left: 8px;
 }
 
-.listen-track-img img {
+.gd-track-cover1 img, .gd-track-cover2 img {
     /*225x224*/
     width: 240px;
     height: 240px;
@@ -195,6 +208,21 @@ img.main-img {
 .album-cover {
     width: 100%;
     height: auto;
+}
+
+/*---------------------------------------------Band Bio----*/
+
+.band-bio {
+   /* margin-left: 5px;
+    margin-top: 15px;
+    margin-bottom: 4px;*/
+    margin: 15px 5px 4px 5px;
+}
+
+.next-events {
+    margin-left: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 /*---------------------------------------------Band Details Flexbox*/
@@ -290,27 +318,7 @@ div.item4, div.item5, div.item6 {
     margin-left: 8px;
 }
 
-/*----------------------------------------Flexbox Containers-------*/
-.main-container {
-    display: flex;
-    flex-flow: row wrap;
-    text-align: center;
-    padding:0;
-}
 
-.main-container > * {   
-    /*padding: 10px; /*set padding for all items within the container*/
-}
-
-.main-section {
-    background-color: rgba(241, 237, 228, 0.8);
-    flex: 1 100%;
-}
-
-.sidebar-section {
-    background-color: #E4EDF1;
-    flex: 1 100%;
-}
 
 /*---------------------------------------------Event Bookings*/
 .booking-details  {
@@ -478,10 +486,7 @@ div.booking-submit-button {
 }
 
 /*----------------------Reviews sidebar------*/
-/*.reviews-side {
-    background-color: #E4EDF1;
-    flex: 1 100%;
-}*/
+
 .reviews-container {
     width: auto;
     margin: 7px 30px 15px 30px;
@@ -729,7 +734,6 @@ footer {
         margin-top: 20px;
     }
     .form-grid-container {
-     /* width: 75%;*/
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-areas: 'Header Header Header Header'
       'Name Name Phone Phone' 
