@@ -13,10 +13,11 @@ to navigate easily to each page, depending on their interest and / or reason the
 
 The list of user stories below details each aspect of the user experiences of the website:
 
-- As a new listener to the music of The Monkees, I wanted to open their website to listen to some of their music. I was able to do this easily on the Home page where there were a list of tracks to play.
+- As a new listener to The Monkees music, I wanted to continue the experience as easily as possible, which I was able to through the Home page with its great range of tracks.
 - As a fan of The Monkees I wanted to view pictures and videos of them, I found pages with both of these on the website.
-- I want to book The Monkees for my event, I logged on to listen to some of their tracks and read some reviews before I completed the booking form.
+- If I or anyone wanted to book The Monkees for an event, one could log on and to listen to some of their tracks and read the reviews before completing the booking form.
 
+The main source used to design the website was by completing manually drawn diagrams which are included in this project assets/documents/project1_wireframes.pdf
 
 ## Features
 

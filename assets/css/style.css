@@ -76,7 +76,6 @@ header{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    
 }
 
 .menuitem span {
@@ -89,7 +88,6 @@ header{
     font-weight: 200;
     letter-spacing: 2px;
     min-height: 40px;
-    
 }
 
 .nav-bar li a:hover:not(.active-page) {
@@ -106,10 +104,6 @@ header{
     flex-flow: row wrap;
     text-align: center;
     padding:0;
-}
-
-.main-container > * {   
-    /*padding: 10px; /*set padding for all items within the container*/
 }
 
 .main-section {
@@ -275,8 +269,6 @@ img.main-img {
 .gallery-img-style {
     width: 95%;
     height: auto;
-    /*height: 190px;
-    width: 290px;*/
 }
 
 /*---------------------------------------------Albums*/
@@ -384,23 +376,6 @@ iframe {
     padding: 10px 8px 25px 8px;
 }
 
-    /*Form and Reviews side bar*/
-/*    
- .booking-reviews-wrapper  {
-     display: flex;
-     flex-flow: row wrap;
- }
- 
-.booking-container {
-    background-color: #F1EDE4;
-    flex: 1 100%;
-    padding-bottom: 12px;
-  }
-*/
-/*.booking-container h4 {
-    text-align: left;
-    margin: 10px 0 18px 8px;
-}*/
 
 /*----------------------Booking form grid------*/
 .booking-item-head {
@@ -473,10 +448,9 @@ iframe {
 }
 .form-grid-container > div {
   background-color: rgba(241, 237, 228, 0.8);
-  text-align: left;
+  text-align: center;
   padding: 12px 15px;
   font-size: 10px;
-  /*height: 55px;*/
   min-height: 55px;
 }
 
@@ -484,9 +458,6 @@ div.booking-item-etype-options1, div.booking-item-etype-options2,
 div.booking-item-etype-options3, div.booking-item-etype-options4,
 div.booking-item-loc-list, div.booking-item-date-picker, 
 div.booking-submit-button {
-    /*padding-top: 0;
-    padding-bottom: 1px;
-    padding-left: 5px;*/
     margin-left: 0;
     padding: 0px 5px 1px 2px;
     text-align: center;
@@ -498,8 +469,9 @@ div.booking-submit-button {
 #et-label,  #loc-label, #date-label {
     padding-bottom: 0;
     min-height: 35px;
-    
+    font-size: medium;
 }
+
 .booking-submit-button > button {
     width: 80px;
 }
@@ -717,11 +689,7 @@ footer {
         width: 290px;
     }
     /*Booking Form and Reviews*/
-    /*
-    .booking-container h4 {
-        margin: 10px 0 18px 40px;
-    }*/
-    
+   
     #booking-query-submit {
         margin-left: 50%;
         margin-top: 20px;
@@ -834,9 +802,7 @@ footer {
     .booking-container {
         flex: 1 65%;
     }
-    /*.booking-container h4 {
-        margin: 10px 0 18px 40px;
-    }*/
+    
     #booking-query-submit {
         margin-left: 50%;
         margin-top: 20px;
@@ -860,6 +826,9 @@ footer {
       padding: 12px 25px;
       font-size: 14px;
       min-height: 50px;
+    }
+    #loc-label {
+        padding-left: 50px;
     }
     /*Footer - Social Media*/
     #social-media {
