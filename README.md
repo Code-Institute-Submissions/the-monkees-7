@@ -17,28 +17,29 @@ The list of user stories below details each aspect of the user experiences of th
 - As a fan of The Monkees I wanted to view pictures and videos of them, I found pages with both of these on the website.
 - If I or anyone wanted to book The Monkees for an event, one could log on and to listen to some of their tracks and read the reviews before completing the booking form.
 
-The main source used to design the website was by completing manually drawn diagrams which are included in this project assets/documents/project1_wireframes.pdf
+The main source used to design the website was by completing manually drawn diagrams which are 
+included in this project [project1_wireframes.pdf](https://github.com/eldowling/the-monkees-project1/blob/master/assets/documents/project1_wireframes.pdf)
 
 ## Features
 
 The website consists of six pages which were designed to divide each feature into clearly defined sections. 
 This is important not only for clarity, but also for mobile users who may only wish to view one of the features available.
 
-The Home page is designed to provide an introduction to the band and showcase some of their latest music singles.
+1. The Home page is designed to provide an introduction to the band and showcase some of their latest music singles.
 
-Following from this the Band Information and Pictures page provides more detailed information about the band and biographies for each of its members. 
+2. Following from this the Band Information and Pictures page provides more detailed information about the band and biographies for each of its members. 
 A picture gallery of the band was included as part of this section.
 
-The Albums page was created with a CSS Grid layout for easily formatted and responsive display of albums and their track listings. This page format can be easily added to with the release of new albums.
+3. The Albums page was created with a CSS Grid layout for easily formatted and responsive display of albums and their track listings. This page format can be easily added to with the release of new albums.
 
-The Videos page provides a simple and uncomplicated section for users to enjoy music videos / performances and interviews from early releases right through to more current performances.
+4. The Videos page provides a simple and uncomplicated section for users to enjoy music videos / performances and interviews from early releases right through to more current performances.
 
-The Event Bookings page allows potential customers to submit a booking enquiry, which prompts them to input detailed information related to the required booking.
+5. The Event Bookings page allows potential customers to submit a booking enquiry, which prompts them to input detailed information related to the required booking.
 It makes use of radio options to allow them to select an event type, and a list to provide options of locations for the event / proformance, as well as a date picker to allow simple selection of the required event date.
 
-On the Event Bookings page the user can also read reviews from previous customers, where a star rating is also displayed for 3 headings: "Live Performance", "Audience Interaction", "Value"
+6. On the Event Bookings page the user can also read reviews from previous customers, where a star rating is also displayed for 3 headings: "Live Performance", "Audience Interaction", "Value"
 
-There is an option to include a page to display Merchandise available for fans to buy, but this has not yet been implemented.
+7. There is an option to include a page to display Merchandise available for fans to buy, but this has not yet been implemented.
  
 ### Existing Features
 - Latest Music - this section allows the user to scroll through a selected list of singles on the Home page and play any of these through the use of an audio bar.
@@ -56,6 +57,10 @@ There is an option to include a page to display Merchandise available for fans t
 
 The following frameworks and technologies were used in order to create the style and functionality required for this website. A brief description of how they have been implemented in the project is detailed below:
 
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+    - **HTML5** is the markup language used to structure and present the content of the website. It provided the features to allow for the use of audio and video clips throughout the website.
+- [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+    - A **CSS Stylesheet** was used in the project to define the style of the page, such as colours, fonts and layout. It also contains additional settings used by the other elements of the page such as Grids and Flexboxes.
 - [Bootstrap](https://getbootstrap.com/docs/3.3/)
     - The project uses **Bootstrap** to provide a responsive grid through the use of predefined column structures. It is also used for a panel layout on the Home page.
 - [FontAwesome](https://fontawesome.com/)
@@ -68,6 +73,9 @@ The following frameworks and technologies were used in order to create the style
 
 Extensive testing was completed throughout the development of each page. While working on each page it was initially designed for mobile
 layout first. Once this was completed, a media query for other layouts was then added and any modification for the device type needed was included.
+
+Testing was carried out using the Chrome browser initially, and changing between the various screen size options. A Samsung Galaxy S7 also used to check the mobile layout on each design update.
+Following from this some additional testing was completed in both Firefox and Internet Explorer browsers.
 
 Specific testing was carried out in the following areas:
 
@@ -133,12 +141,12 @@ The photos and singles / albums covers were obtained from the following sources:
 - [Picture Frame Border](https://clipart.info/images/minicovers/1520539443black-border-png-transparent-background.png)
 - [Band Playing Image](https://img.rasset.ie/000bc3a2-800.jpg)
 - [More of the Monkees Album Cover](https://en.wikipedia.org/wiki/More_of_the_Monkees)
+- [Last Train to Clarksville Single Cover](https://streamd.hitparade.ch/cdimages/the_monkees-last_train_to_clarksville_s_3.jpg)
 - [The Monkees Album Cover](https://en.wikipedia.org/wiki/The_Monkees_(album))
-- [band2 on a boat]()
-- [b3]()
-- [b4]()
-- [recent]()
-- [clarksville]()
+- [The Monkees Band Picture 2](https://images-na.ssl-images-amazon.com/images/I/C1YdDyfno6S._SL1000_.png)
+- [The Monkees Band Picture 3](https://flashbak.com/wp-content/uploads/2017/09/The-Monkees-Pop-Group-1967.jpg)
+- [The Monkees Band Picture 4](https://www.telegraph.co.uk/content/dam/music/2016/05/25/99058693-The-Monkees-CULTURE_trans_NvBQzQNjv4Bqeo_i_u9APj8RuoebjoAHt0k9u7HhRJvuo-ZLenGRumA.jpg?imwidth=450)
+- [The Monkees Band Recent Picture](https://www.culturesonar.com/wp-content/uploads/2016/06/The-Monkees-600x400.jpg)
 
 ### Acknowledgements
 
