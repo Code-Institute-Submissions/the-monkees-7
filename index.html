@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>The Monkees</title>
@@ -13,11 +14,11 @@
     <header class="container-fluid">
         <div class="row">
             <ul class="nav-bar list-inline clearfix menu-color">
-                <li class="col-xs-4 col-sm-2 menuitem active-page">
+                <li class="col-xs-4 col-sm-2 menuitem">
                     <a href="index.html" class="active-page"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
                 </li>
                 <li class="col-xs-4 col-sm-2 menuitem">
-                    <a href="bandinfo.html"><i class="fa fa-id-card" aria-hidden="true"></i><span>Band Info<br>& Pics</span></a>
+                    <a href="bandinfo.html"><i class="fa fa-id-card" aria-hidden="true"></i><span>Band Info & Pics</span></a>
                 </li>
                 <li class="col-xs-4 col-sm-2 menuitem">
                     <a href="albums.html"><i class=" fa fa-headphones-alt" aria-hidden="true"></i><span>Albums</span></a>
@@ -33,30 +34,28 @@
                 </li>
             </ul>
         </div>
-        <div class="row title-row"> <!--Band Name / Title-->
+        
+    </header>
+    <section class="container-fluid">
+        <div class="row title-row"> <!--Bookings Header-->
             <div class="col-xs-12 col-md-12">
                 <h2>The Monkees</h2>
             </div>
         </div>
-    </header>
-    <section class="container-fluid">
-        <div class="row">
+        <div class="row"> <!--Band Main Picture-->
             <div class="hidden-xs col-md-3"></div> <!--blank-->
             <div class="col-xs-12 col-md-6">
                 <img class="main-img" src="assets/images/band-in-blue.jpg"></img>
             </div>
             <div class="hidden-xs col-md-3"></div> <!--blank-->
         </div>
-        
-        <div class="row title-row"> <!--Band Name / Title-->
-            <div class="col-xs-12 col-md-12">
-                <h2 class="text-center">Biography</h2>
-            </div>
+        <!--Booking Form-->
+        <div class="row title-row"> <!--Booking Form Header-->
+            <h2>Biography</h2>
         </div>
         </section>
-        
-        <div class="main-container" id="index-main">
-            <div class="main-section">
+        <div class="main-container" id="index-main"> <!--Flexbox Container-->
+            <div class="main-section"> <!--Flexbox Main - Booking Form-->
                 <div class="band-bio">
                     <p>The Monkees were originally formed as part of a TV series about a rock group in 1965, 
                     which premiered on 12th September 1966.</p>
@@ -64,22 +63,26 @@
                     and now with over 50 years experience of live performances world wide, are also
                     available to perform at various different events.</p>
                 </div>
-                 <!--next-events-->
-                    <div class="panel panel-warning">
-                      <div class="panel-heading">Upcoming Events</div>
-                      <div class="panel-body">
-                        <ol>
-                            <li>O2 Arena, Dublin -- November 17th</li>
-                            <li>O2 Arena, Dublin -- November 18th</li>
-                            <li>INEC, Kilarney   -- November 24th</li>
-                            <li>O2 Arena, Dublin -- November 25th</li>
-                            <li>SSE Arena, Belfast -- December 7th</li>
-                        </ol>
-                      </div>
-                    </div>
-                  
-            </div> <!--End Center section - Band Bio -->
+                
+                <!--next-events-->
+                <div class="panel panel-warning">
+                  <div class="panel-heading">Upcoming Events</div>
+                  <div class="panel-body">
+                    <ol>
+                        <li>O2 Arena, Dublin -- November 17th</li>
+                        <li>O2 Arena, Dublin -- November 18th</li>
+                        <li>INEC, Kilarney   -- November 24th</li>
+                        <li>O2 Arena, Dublin -- November 25th</li>
+                        <li>SSE Arena, Belfast -- December 7th</li>
+                    </ol>
+                  </div>
+                </div>
+                
+                
+                
+            </div> <!-----------END Main Section-------------->
             
+            <!------------------Flexbox Sidebar - Latest Music------------------------->
             <div class="sidebar-section" id="index-sidebar"> <!--Sidebar Start-->
                 <form class="home-sidebar-grid">
                     <div class="gd-latest-head"><h2>Latest Music</h2></div>
@@ -121,10 +124,12 @@
                 </form>
             </div><!--Sidebar End-->
             
-        </div>
+        </div> <!-----------END Main Section-------------->
+            
+            
         
     
-    <footer class="container-fluid">
+        <footer class="container-fluid">
         <div id="footer-details" class="row">
             <div class="col-sm-12">
                 <h5 id="social-media" class="uppercase">Social Media Links:</h5>
@@ -136,5 +141,7 @@
             </div>
         </div>
     </footer>
+
 </body>
+
 </html>

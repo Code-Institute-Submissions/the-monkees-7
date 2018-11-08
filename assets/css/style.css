@@ -1,9 +1,3 @@
-/*
-<link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,600i,700,700i|Poppins:300,400,400i,500,500i,600,600i,700,700i|Shadows+Into+Light+Two" rel="stylesheet"> <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700|Poppins:400,500,600,700" rel="stylesheet"> 
-font-family: 'Shadows Into Light Two', cursive;
-font-family: 'Nunito', sans-serif;
-font-family: 'Poppins', sans-serif;
-*/
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,500i,600,600i,700,700i|Nunito:300,400,600,600i,700,700i|Shadows+Into+Light+Two');
 
 /*---------------------------------------------Colours----*/
@@ -153,13 +147,6 @@ header{
   margin-bottom: 10px;
 }
 
-#index-main { height: 90vh; }
-
-#index-sidebar {
-    overflow-y: auto;
-    overflow-x: hidden;
-}
-
 .gd-audio-block1 audio, .gd-audio-block2 audio { 
     width: 280px; 
     align-items: center;
@@ -210,16 +197,19 @@ img.main-img {
    margin: 15px 5px 4px 5px;
 }
 
-.next-events {
-    margin-left: 50px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
 .bio-name-head {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 22px;
+}
+.next-events-box {
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: groove;
+    border-color: #E4EDF1;
+    padding: 5px;
 }
 
 /*---------------------------------------------Band Details Flexbox*/
@@ -617,9 +607,7 @@ footer {
     .menuitem span {
         min-height: 35px;
     }
-    /*.side-bar {
-        width: 50%;
-    }*/
+    
     .band-bio {
         margin-left: 13vw;
         margin-right: 13vw;
@@ -628,10 +616,12 @@ footer {
     }
 
    .panel-warning {
-        margin-left: 30vw;
-        width: 350px;
+        margin-left: 15vw;
+        width: 35vw;
+        min-width: 200px;
         margin-right: 15vw;
         margin-top: 10vh;
+        font-size: small;
     }
     
     /*Band Info*/
@@ -718,10 +708,17 @@ footer {
     .main-section {
       flex: 1 70%;
     }
-
+    
+    #index-main { height: 95vh; }
+    
     .sidebar-section {
       flex: 1 30%;
     }
+    
+    #index-sidebar {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
     
     .band-bio {
         margin-left: 13vw;
@@ -731,9 +728,9 @@ footer {
     }
 
    .panel-warning {
-        margin-left: 20vw;
-        width: 350px;
-        margin-right: 15vw;
+        margin-left: 17vw;
+        width: 35vw;
+        margin-right: 17vw;
         margin-top: 10vh;
     }
     
