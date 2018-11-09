@@ -181,14 +181,19 @@ img.main-img {
 .bio-img {
     width: 100%;
     height: auto;
-    /*width: 340px;
-    height: 210px;*/
-    /*border-radius: 50%;*/
 }
 
 .album-cover {
     width: 100%;
     height: auto;
+}
+
+.shop-img {
+    width: 225px;
+    height: 225px;
+    border: double;
+    border-width: 2px;
+    border-color: black;
 }
 
 /*---------------------------------------------Band Bio----*/
@@ -562,6 +567,47 @@ div.booking-submit-button {
     font-size: 10px;
 }
 
+/*---------------------------------------------Merchandise*/
+.sub-heading {
+    text-align: left;
+    padding-left: 25px;
+}
+
+.shop-item1 { grid-area: item1-img; }
+.shop-item2 { grid-area: item1-detail; }
+.shop-item3 { grid-area: item1-price; }
+.shop-item4 { grid-area: item2-img; }
+.shop-item5 { grid-area: item2-detail; }
+.shop-item6 { grid-area: item2-price; }
+.shop-item7 { grid-area: item3-img; }
+.shop-item8 { grid-area: item3-detail; }
+.shop-item9 { grid-area: item3-price; }
+
+.shop-grid-container {
+  display: grid;
+  /*Mobile Layout*/
+  grid-template-areas: 
+  'item1-img item1-detail' 
+  'item1-img item1-price'
+  'item2-img item2-detail' 
+  'item2-img item2-price'
+  'item3-img item3-detail' 
+  'item3-img item3-price';
+  
+  grid-template-columns: 2fr 1fr ;
+  /*grid-column-gap: 0.5px;
+  grid-row-gap: 15px;*/
+  background-color: #81979b; /*teal*/
+  padding: 4px;
+  margin-bottom: 10px;
+}
+.shop-grid-container > div {
+  background-color: rgba(241, 237, 228, 0.8); /*beige*/
+  padding: 15px 0;
+  font-size: 14px;
+  text-align: center;
+}
+
 /*---------------------------------------------Footer*/
 
 footer {
@@ -833,6 +879,20 @@ footer {
     }
     .social-media-links {
         margin-left: 42vw;
+    }
+    
+    /*Merchandise*/
+    .shop-grid-container {
+  display: grid;
+  /*Desktop Layout*/
+  grid-template-areas: 
+  'item1-img item2-img item3-img'
+  'item1-detail item2-detail item3-detail'
+  'item1-price item2-price item3-price';
+  
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-column-gap: 25px;
+  grid-row-gap: 0.5px;
     }
 
 
