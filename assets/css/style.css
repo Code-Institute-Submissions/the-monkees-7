@@ -603,8 +603,8 @@ div.booking-submit-button {
 }
 .shop-grid-container > div {
   background-color: rgba(241, 237, 228, 0.8); /*beige*/
-  padding: 15px 0;
-  font-size: 14px;
+  padding: 8px 0;
+  font-size: 12px;
   text-align: center;
 }
 
@@ -675,6 +675,10 @@ footer {
         width: 100px;
         height: 100px;
         border-radius: 50%;
+    }
+    .band-intro {
+        margin-left: 8vw;
+        margin-right: 8vw;
     }
     
     .profile-pic {
@@ -771,6 +775,11 @@ footer {
         margin-right: 13vw;
         margin-top: 15px;
         margin-bottom: 15px;
+    }
+    
+    .band-intro {
+        margin-left: 10vw;
+        margin-right: 10vw;
     }
 
    .panel-warning {
@@ -909,6 +918,11 @@ footer {
     .gallery-img-style {    
         height: 240px;
         width: 350px;
+    }
+    
+    .band-intro {
+        margin-left: 12vw;
+        margin-right: 12vw;
     }
 }
 

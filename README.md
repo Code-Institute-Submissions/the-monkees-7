@@ -39,7 +39,9 @@ It makes use of radio options to allow them to select an event type, and a list 
 
 6. On the Event Bookings page the user can also read reviews from previous customers, where a star rating is also displayed for 3 headings: "Live Performance", "Audience Interaction", "Value"
 
-7. There is an option to include a page to display Merchandise available for fans to buy, but this has not yet been implemented.
+7. The Merchandise page allows fans to browse through various items to buy, such as Albums, Singles, Clothing and Accessories. 
+    The website displays the items through the use of a reusable grid, that additional items can easily be added to. 
+    It is planned to have a link on each item image which would add the item to the user's basket, this has not yet been implemented.
  
 ### Existing Features
 - Latest Music - this section allows the user to scroll through a selected list of singles on the Home page and play any of these through the use of an audio bar.
@@ -48,10 +50,11 @@ It makes use of radio options to allow them to select an event type, and a list 
 - Videos CSS Grid - This page also makes use of the CSS Grid Layout, and allows for more videos to be added using the simple structure.
 - 'Other' Event Type Modal Box - The form on the Event Bookings page provides a text input box to enter another event type. If the 'Other' radio option is selected by the user, then a modal box will display a message prompting the user to complete the text box.
 - Star Ratings - The reviews section on the Event Bookings page provides a simple and eye-catching layout for potential customers looking to get feedback from others who have already booked or attended a previous event.
+- Merchandise CSS Grid - A simple grid modal was used to display the collection of merchandise available to buy. This allows for easy inclusion of additional items.
 
 
 ### Features Left to Implement
-- Merchandise - This page can easily be implemented using the Flexbox areas set up in the style sheet and creation of another CSS Grid and Grid Areas to provide a responsive design. 
+- Merchandise - This page can updated to include a wider range of products, some more categories can also be added conveniently through the reuse of predefined sub-headings and shopping grid layout. It can be further enhanced by adding a link to allow the user to add the item to their basket by simply clicking on the item image.
 
 ## Technologies Used
 
@@ -147,6 +150,12 @@ The photos and singles / albums covers were obtained from the following sources:
 - [The Monkees Band Picture 3](https://flashbak.com/wp-content/uploads/2017/09/The-Monkees-Pop-Group-1967.jpg)
 - [The Monkees Band Picture 4](https://www.telegraph.co.uk/content/dam/music/2016/05/25/99058693-The-Monkees-CULTURE_trans_NvBQzQNjv4Bqeo_i_u9APj8RuoebjoAHt0k9u7HhRJvuo-ZLenGRumA.jpg?imwidth=450)
 - [The Monkees Band Recent Picture](https://www.culturesonar.com/wp-content/uploads/2016/06/The-Monkees-600x400.jpg)
+- [Band T-Shirt](https://thumbs3.ebaystatic.com/d/l225/m/mReg5O-2J_7mKwZYO_RL05A.jpg)
+- [Long sleeved T-Shirt](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbiHWMnUWT383Mn6Gs7wf_WMJNNdExP92-aqaQi_CW70xYCJHpzw)
+- [Blue Hat](https://thumbs.worthpoint.com/zoom/images1/1/0518/13/monkees-original-mike-nesmith-knit_1_568d05d6c2326bd4690e1f84ac446b4e.jpg)
+- [Red Band Button](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYKYV1YjA3CaOGoxnFU2abx8v_YPVbaKFNGHHgMSmKYtqSR-mxrQ)
+- [Tamborine](https://www.rhino.com/sites/rhino.com/files/styles/square/public/monkees-tamborine.jpg?itok=q_2LFgfQ)
+- [Red Logo Keyring](https://img.secure.cdn2.wmgecom.com/media/catalog/product/cache/1124/image/800x/9df78eab33525d08d6e5fb8d27136e95/k/e/keychain2_1.jpg)
 
 ### Acknowledgements
 
