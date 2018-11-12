@@ -15,7 +15,7 @@ The list of user stories below details each aspect of the user experiences of th
 
 - As a new listener to The Monkees music, I wanted to continue the experience as easily as possible, which I was able to through the Home page with its great range of tracks.
 - As a fan of The Monkees I wanted to view pictures and videos of them, I found pages with both of these on the website.
-- If I or anyone wanted to book The Monkees for an event, one could log on and to listen to some of their tracks and read the reviews before completing the booking form.
+- If I or anyone wanted to book The Monkees for an event, it is possible to log on and to listen to some of their tracks and read the reviews before completing the booking form.
 
 The main source used to design the website was by completing manually drawn diagrams which are 
 included in this project [project1_wireframes.pdf](https://github.com/eldowling/the-monkees-project1/blob/master/assets/documents/project1_wireframes.pdf)
@@ -40,21 +40,21 @@ It makes use of radio options to allow them to select an event type, and a list 
 6. On the Event Bookings page the user can also read reviews from previous customers, where a star rating is also displayed for 3 headings: "Live Performance", "Audience Interaction", "Value"
 
 7. The Merchandise page allows fans to browse through various items to buy, such as Albums, Singles, Clothing and Accessories. 
-    The website displays the items through the use of a reusable grid, that additional items can easily be added to. 
+    The website displays the items through the use of a reusable grid, so that additional items can easily be added to it. 
     It is planned to have a link on each item image which would add the item to the user's basket, this has not yet been implemented.
  
 ### Existing Features
 - Latest Music - this section allows the user to scroll through a selected list of singles on the Home page and play any of these through the use of an audio bar.
 - Band Pictures Border Image - A border image was used to customise and define each picture in the album.
-- Albums CSS Grid Layout - Each new album can be easily added to the Albums page through the use of a simple CSS Grid layout. Grid areas are formatted to suit the layout of device used to view the page.
+- Albums CSS Grid Layout - Each new album can easily be added to the Albums page through the use of a simple CSS Grid layout. Grid areas are formatted to suit the layout of device used to view the page.
 - Videos CSS Grid - This page also makes use of the CSS Grid Layout, and allows for more videos to be added using the simple structure.
 - 'Other' Event Type Modal Box - The form on the Event Bookings page provides a text input box to enter another event type. If the 'Other' radio option is selected by the user, then a modal box will display a message prompting the user to complete the text box.
 - Star Ratings - The reviews section on the Event Bookings page provides a simple and eye-catching layout for potential customers looking to get feedback from others who have already booked or attended a previous event.
-- Merchandise CSS Grid - A simple grid modal was used to display the collection of merchandise available to buy. This allows for easy inclusion of additional items.
+- Merchandise CSS Grid - A simple grid model was used to display the collection of merchandise available to buy, which allows for easy inclusion of additional items.
 
 
 ### Features Left to Implement
-- Merchandise - This page can updated to include a wider range of products, some more categories can also be added conveniently through the reuse of predefined sub-headings and shopping grid layout. It can be further enhanced by adding a link to allow the user to add the item to their basket by simply clicking on the item image.
+- Merchandise - This page can updated to include a wider range of products, in addition some more categories can also be added conveniently through the reuse of predefined sub-headings and shopping grid layout. It can be further enhanced by adding a link to allow the user to add the item to their basket by simply clicking on the item image.
 
 ## Technologies Used
 
@@ -74,11 +74,13 @@ The following frameworks and technologies were used in order to create the style
 
 ## Testing
 
-Extensive testing was completed throughout the development of each page. While working on each page it was initially designed for mobile
+Extensive testing was completed throughout the development of each page. While working on each page it was initially designed to suit mobile
 layout first. Once this was completed, a media query for other layouts was then added and any modification for the device type needed was included.
 
-Testing was carried out using the Chrome browser initially, and changing between the various screen size options. A Samsung Galaxy S7 also used to check the mobile layout on each design update.
+Testing was carried out using the Chrome browser initially, and changing between the various screen size options. 
+A Samsung Galaxy S7 also used to check the mobile layout on each design update.
 Following from this some additional testing was completed in both Firefox and Internet Explorer browsers.
+Finally a Nexus7 was used to review the layout for medium screen / tablets.
 
 Specific testing was carried out in the following areas:
 

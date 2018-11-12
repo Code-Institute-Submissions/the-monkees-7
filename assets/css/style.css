@@ -179,7 +179,7 @@ img.main-img {
 }
 
 .bio-img {
-    width: 100%;
+    width: 75%;
     height: auto;
 }
 
@@ -252,6 +252,7 @@ img.main-img {
 .gallery-wrapper {
     margin-left: 10px;
     margin-right: 10px;
+    overflow-x: hidden;
 }
 .gallery {
     margin: 10px;
@@ -303,7 +304,7 @@ div.item1, div.item2, div.item3 {
 }
 div.item2 {
     padding-top: 10px;
-    padding-bottom: 1f 0px;
+    padding-bottom: 0px;
 }
 
 div.item4, div.item5, div.item6 {
@@ -353,7 +354,7 @@ div.vid-item1, div.vid-item2, div.vid-item3 {
 }
 div.vid-item2 {
     padding-top: 10px;
-    padding-bottom: 1f 0px;
+    padding-bottom: 0px;
 }
 
 video {
@@ -641,19 +642,31 @@ footer {
 }
 
 .social-media-links li a i:hover {
-    background: #8E857E;
+    /*background: #8E857E;
     border-radius: 5px;
-    margin: 2px;
+    margin: 2px;*/
+    colour: #8E857E;
 }
 
 /*---------------------------------------------Media Queries*/
-
+@media all and (min-width: 420px) {
+    img.main-img {
+        width: 52%;
+        height: auto;
+        margin-left: 20vw;
+    }
+}
 /*-------------------------Small devices / tablets */
 @media all and (min-width: 768px) {
     .menuitem span {
         min-height: 35px;
     }
     
+    img.main-img {
+        width: 65%;
+        height: auto;
+        margin-left: 17vw;
+    }
     .band-bio {
         margin-left: 13vw;
         margin-right: 13vw;
@@ -662,7 +675,7 @@ footer {
     }
 
    .panel-warning {
-        margin-left: 15vw;
+        margin-left: 30vw;
         width: 35vw;
         min-width: 200px;
         margin-right: 15vw;
@@ -753,6 +766,7 @@ footer {
     img.main-img {
     width: 460px;
     height: 330px;
+    margin-left: 5vw;
     }
     
     .main-section {
@@ -783,7 +797,7 @@ footer {
     }
 
    .panel-warning {
-        margin-left: 17vw;
+        margin-left: 30vw;
         width: 35vw;
         margin-right: 17vw;
         margin-top: 10vh;
