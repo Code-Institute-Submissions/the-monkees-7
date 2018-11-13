@@ -126,7 +126,6 @@ header{
 
 .home-sidebar-grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
   /*Mobile Layout*/
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-areas: 
@@ -173,7 +172,6 @@ img.main-img {
 }
 
 .gd-track-cover1 img, .gd-track-cover2 img {
-    /*225x224*/
     width: 240px;
     height: 240px;
 }
@@ -229,7 +227,6 @@ img.main-img {
 .band-info-container > * {   
     /*Set all items within the container to have same padding*/
     padding: 10px;
-    /*flex: 1 100%;*/
 }
 
 .band-intro {
@@ -287,8 +284,6 @@ img.main-img {
   'album-footer';
   
   grid-template-columns: auto ;
-  grid-gap: 0.5px;
-  background-color: #81979b; /*teal*/
   padding: 4px;
   margin-bottom: 10px;
 }
@@ -596,8 +591,6 @@ div.booking-submit-button {
   'item3-img item3-price';
   
   grid-template-columns: 2fr 1fr ;
-  /*grid-column-gap: 0.5px;
-  grid-row-gap: 15px;*/
   background-color: #81979b; /*teal*/
   padding: 4px;
   margin-bottom: 10px;
@@ -620,7 +613,7 @@ footer {
 }
 
 #social-media {
-    padding-left: 25vw;
+    padding-left: 35vw;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     font-size: 15px;
@@ -628,7 +621,7 @@ footer {
 
 .social-media-links {
     padding-bottom: 15px;
-    margin-left: 25vw;
+    margin-left: 33vw;
 }
 
 .social-media-links li a i {
@@ -642,9 +635,6 @@ footer {
 }
 
 .social-media-links li a i:hover {
-    /*background: #8E857E;
-    border-radius: 5px;
-    margin: 2px;*/
     colour: #8E857E;
 }
 
@@ -656,6 +646,7 @@ footer {
         margin-left: 20vw;
     }
 }
+
 /*-------------------------Small devices / tablets */
 @media all and (min-width: 768px) {
     .menuitem span {
@@ -694,13 +685,19 @@ footer {
         margin-right: 8vw;
     }
     
-    .profile-pic {
-        flex: 0 1 15%;
+   .profile-pic {
+        flex: 0 1 10%;
+        margin-left: 4vw;
+        margin-bottom: 2vh;
+        padding-left: 2px;
     }
 
     .profile-details {
-       flex: 1 0 35%
+        flex: 1 0 30%;
+        margin-bottom: 2vh;
+        padding-left: 2px;
     }
+    
     /*Albums*/
      .grid-container {
          grid-template-areas:
@@ -717,6 +714,7 @@ footer {
      div.item2 {
         padding-top: 40px;
         padding-bottom: 40px;
+        min-height: 32vh;
     }
     
     /*Videos*/
@@ -744,8 +742,22 @@ footer {
     /*Booking Form and Reviews*/
    
     #booking-query-submit {
-        margin-left: 50%;
+        margin-left: 5vw;
         margin-top: 20px;
+    }
+    
+    /*Merchandise*/
+    .shop-grid-container {
+      display: grid;
+      /*Desktop Layout*/
+      grid-template-areas: 
+      'item1-img item2-img item3-img'
+      'item1-detail item2-detail item3-detail'
+      'item1-price item2-price item3-price';
+  
+      grid-template-columns: 1fr 1fr 1fr ;
+      grid-column-gap: 10px;
+      grid-row-gap: 0.25px;
     }
     
     /*Footer*/
@@ -758,15 +770,22 @@ footer {
     
 }
 
+/*-------------------------iPhone X Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : landscape) {
+    div.item2 {
+        min-height: 40vh;
+    }
+}
+
 /*--------------------------Medium devices / desktops */
 @media all and (min-width: 992px) {
     .menuitem span {
         min-height: 30px;
     }
     img.main-img {
-    width: 460px;
-    height: 330px;
-    margin-left: 5vw;
+        width: 460px;
+        height: 330px;
+        margin-left: 5vw;
     }
     
     .main-section {
@@ -820,17 +839,18 @@ footer {
     
     .profile-pic {
         flex: 0 1 15%;
+        margin-left: 1vw;
     }
 
     .profile-details {
        flex: 1 0 35%
+       margin-left: 1vw;
     }
     
     
     /* Band Picture Gallery */
     .gallery-img-style {    
         width: 270px;
-        /*width: 350px;*/
     }
     /*Albums*/
      .grid-container {
@@ -848,6 +868,7 @@ footer {
      div.item2 {
         padding-top: 40px;
         padding-bottom: 40px;
+        min-height: 49vh;
     }
     
     /*Videos*/
@@ -862,7 +883,7 @@ footer {
       
       grid-template-columns: 1fr 1fr 1fr ;
       grid-gap: 0px;
-      }
+    }
     
     /*Booking Form and Reviews*/
     .booking-container {
@@ -870,7 +891,7 @@ footer {
     }
     
     #booking-query-submit {
-        margin-left: 50%;
+        margin-left: 29vw;
         margin-top: 20px;
     }
     .form-grid-container {
@@ -906,16 +927,16 @@ footer {
     
     /*Merchandise*/
     .shop-grid-container {
-  display: grid;
-  /*Desktop Layout*/
-  grid-template-areas: 
-  'item1-img item2-img item3-img'
-  'item1-detail item2-detail item3-detail'
-  'item1-price item2-price item3-price';
-  
-  grid-template-columns: 1fr 1fr 1fr ;
-  grid-column-gap: 25px;
-  grid-row-gap: 0.5px;
+      display: grid;
+      /*Desktop Layout*/
+      grid-template-areas: 
+      'item1-img item2-img item3-img'
+      'item1-detail item2-detail item3-detail'
+      'item1-price item2-price item3-price';
+      
+      grid-template-columns: 1fr 1fr 1fr ;
+      grid-column-gap: 25px;
+      grid-row-gap: 0.5px;
     }
 
 
