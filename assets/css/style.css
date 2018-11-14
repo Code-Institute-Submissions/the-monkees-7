@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,500i,600,600i,700,700i|Nunito:300,400,600,600i,700,700i|Shadows+Into+Light+Two');
 
-/*---------------------------------------------Colours----*/
+/*---------------------------------------------colors----*/
 body {
     background-color: #a9bcc2;  /*lightblue*/
     font-family: 'Nunito', sans-serif;
@@ -613,7 +613,7 @@ footer {
 }
 
 #social-media {
-    padding-left: 35vw;
+    padding-left: 28vw;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     font-size: 15px;
@@ -621,7 +621,7 @@ footer {
 
 .social-media-links {
     padding-bottom: 15px;
-    margin-left: 33vw;
+    margin-left: 25vw;
 }
 
 .social-media-links li a i {
@@ -635,7 +635,7 @@ footer {
 }
 
 .social-media-links li a i:hover {
-    colour: #8E857E;
+    color: #8E857E;
 }
 
 /*---------------------------------------------Media Queries*/
@@ -666,11 +666,6 @@ footer {
     }
 
    .panel-warning {
-        margin-left: 30vw;
-        width: 35vw;
-        min-width: 200px;
-        margin-right: 15vw;
-        margin-top: 10vh;
         font-size: small;
     }
     
@@ -789,19 +784,19 @@ footer {
     }
     
     .main-section {
-      flex: 1 70%;
+      flex: 1 65%;
     }
     
     #index-main { height: 95vh; }
     
     .sidebar-section {
-      flex: 1 30%;
+      flex: 1 25%;
     }
     
     #index-sidebar {
-    overflow-y: auto;
-    overflow-x: hidden;
-}
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
     
     .band-bio {
         margin-left: 13vw;
@@ -816,10 +811,7 @@ footer {
     }
 
    .panel-warning {
-        margin-left: 30vw;
-        width: 35vw;
-        margin-right: 17vw;
-        margin-top: 10vh;
+       margin-top: 10vh;
     }
     
     .audio-block {
@@ -843,10 +835,9 @@ footer {
     }
 
     .profile-details {
-       flex: 1 0 35%
+       flex: 1 0 32%;
        margin-left: 1vw;
     }
-    
     
     /* Band Picture Gallery */
     .gallery-img-style {    
@@ -860,6 +851,7 @@ footer {
         'album-cover tracks1 tracks2'
         'album-footer album-footer album-footer';
          grid-template-columns: auto auto auto;
+         grid-template-rows: 10% 10% 70% 10%;
      }
      .grid-container div {
          font-size: 18px;
@@ -938,7 +930,7 @@ footer {
       grid-column-gap: 25px;
       grid-row-gap: 0.5px;
     }
-
+}
 
 /*---------------------------Large devices / wide screens */
 @media all and (min-width: 1200px) {
@@ -959,5 +951,12 @@ footer {
         margin-left: 12vw;
         margin-right: 12vw;
     }
-}
+    
+    /*Album*/
+    .grid-container {
+        grid-template-areas: 'album-cover album-title album-title' 'album-cover track-header track-header' 'album-cover tracks1 tracks2' 'album-footer album-footer album-footer';
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 10% 10% 70% 10%;
+    }
 
+}
